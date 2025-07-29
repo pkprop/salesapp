@@ -1,23 +1,20 @@
 import type { HttpContext } from '@adonisjs/core/http'
-
+import User from '#models/user'
 export default class AuthController {
 
-    async index({ inertia }: HttpContext) {
-        return inertia.render('admin/auth/index')
-    }
-
-    async login({request,response,inertia}:HttpContext){
+    async login({request,response,inertia,auth}:HttpContext){
         const { email, password } = request.only(['email', 'password'])
         try {
             const user = ''
             if (!user) {
                return inertia.render('admin/auth/login',{errors:{invalid:'Invalid credentials'}})
             }
-            // const validateuser = await User.verifyCredentials(email, password)
-            // await auth.use('web').login(validateuser)
+             const validateuser = await User.verifyCredentials(email, password)
+             await auth.use('web').login(validateuser)
             response.redirect('/admin/dashboard')
         } catch (error) {
             return inertia.render('admin/auth/login',{errors:{invalid:error.message}})
         }
     }
+
 }

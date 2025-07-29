@@ -1,27 +1,13 @@
-import mongoose, { Schema, Document } from 'mongoose'
+import { DateTime } from 'luxon'
+import { BaseModel, column } from '@adonisjs/lucid/orm'
 
-/**
- * Define the TypeScript interface for the User document
- */
-export interface User extends Document {
-  name: string
-  email: string
-  password: string
-  createdAt: Date
-  updatedAt: Date
+export default class User extends BaseModel {
+  @column({ isPrimary: true })
+  declare id: number
+  
+  @column.dateTime({ autoCreate: true })
+  declare createdAt: DateTime
+
+  @column.dateTime({ autoCreate: true, autoUpdate: true })
+  declare updatedAt: DateTime
 }
-
-/**
- * Define the schema for MongoDB
- */
-const UserSchema: Schema<User> = new Schema(
-  {
-    name: { type: String, required: true },
-    email: { type: String, required: true, unique: true },
-    password: { type: String, required: true },
-  },
-  {
-    timestamps: true,
-  }
-)
-export default mongoose.model<User>('User', UserSchema)
