@@ -1,6 +1,6 @@
 {
-  "name": "peopXpo",
-  "version": "0.0.0",
+  "name": "propXpo",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "license": "UNLICENSED",
@@ -29,7 +29,8 @@
     "#database/*": "./database/*.js",
     "#tests/*": "./tests/*.js",
     "#start/*": "./start/*.js",
-    "#config/*": "./config/*.js"
+    "#config/*": "./config/*.js",
+    "#inertia/*": "./inertia/*.js"
   },
   "devDependencies": {
     "@adonisjs/assembler": "^7.8.2",
@@ -53,7 +54,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@adonisjs/auth": "^9.4.0",
+    "@adonisjs/auth": "^9.4.2",
     "@adonisjs/core": "^6.18.0",
     "@adonisjs/cors": "^2.2.1",
     "@adonisjs/inertia": "^3.1.1",
@@ -65,10 +66,12 @@
     "@inertiajs/react": "^2.0.17",
     "@vinejs/vine": "^3.0.1",
     "edge.js": "^6.2.1",
+    "luxon": "^3.7.1",
     "mongoose": "^8.16.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "reflect-metadata": "^0.2.2"
+    "reflect-metadata": "^0.2.2",
+    "rsuite": "^5.83.2"
   },
   "hotHook": {
     "boundaries": [

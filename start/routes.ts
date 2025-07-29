@@ -8,5 +8,13 @@
 */
 
 import router from '@adonisjs/core/services/router'
-router.on('/').renderInertia('home')
+router.on('/').renderInertia('front/home')
 
+
+
+
+router.group(() => {
+    router.on('/').renderInertia('admin/auth/login')
+    router.on('/login').renderInertia('admin/auth/login')
+
+}).prefix('/admin')

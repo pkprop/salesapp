@@ -9,15 +9,13 @@ import '../css/admin/admin.css';
 
 import { hydrateRoot } from 'react-dom/client'
 import { createInertiaApp } from '@inertiajs/react';
-import { resolvePageComponent } from '@adonisjs/inertia/helpers';
+import { resolvePageComponent } from '@adonisjs/inertia/helpers'
 
-//const appName = import.meta.env.VITE_APP_NAME || ''
+const appName = 'Porperty Xpo Admin'
 
 createInertiaApp({
-  progress: { color: '#F87415' },
-
-  title: (title) => `${title}`,
-
+  progress: {color: '#f29620'},
+  title: (title) => `${title} | ${appName}`,
   resolve: (name) => {
     return resolvePageComponent(
       `../pages/${name}.tsx`,

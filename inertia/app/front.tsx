@@ -1,23 +1,17 @@
 /// <reference path="../../adonisrc.ts" />
 /// <reference path="../../config/inertia.ts" />
 
-import '../css/admin/vendors/bootstrap.css';
-import '../css/admin/vendors/font-awesome.css';
-import '../css/admin/linearicon.css';
-import '../css/admin/remixicon.css';
-import '../css/admin/admin.css';
+import '../css/front/app.css';
 
 import { hydrateRoot } from 'react-dom/client'
 import { createInertiaApp } from '@inertiajs/react';
-import { resolvePageComponent } from '@adonisjs/inertia/helpers';
+import { resolvePageComponent } from '@adonisjs/inertia/helpers'
 
-//const appName = import.meta.env.VITE_APP_NAME || ''
+const appName = 'Porperty Xpo'
 
 createInertiaApp({
-  progress: { color: '#F87415' },
-
-  title: (title) => `${title}`,
-
+  progress: { color: '#f29620' },
+  title: (title) => `${title} | ${appName}`,
   resolve: (name) => {
     return resolvePageComponent(
       `../pages/${name}.tsx`,
