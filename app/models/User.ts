@@ -3,14 +3,14 @@ import hash from '@adonisjs/core/services/hash'
 import { compose } from '@adonisjs/core/helpers'
 import { BaseModel, column } from '@adonisjs/lucid/orm'
 import { withAuthFinder } from '@adonisjs/auth/mixins/lucid'
-import { DbRememberMeTokensProvider } from '@adonisjs/auth/session'
+//import { DbRememberMeTokensProvider } from '@adonisjs/auth/session'
 const AuthFinder = withAuthFinder(() => hash.use('scrypt'), {
   uids: ['email'],
   passwordColumnName: 'password',
 })
 
 export default class User extends compose(BaseModel, AuthFinder) {
-  static rememberMeTokens = DbRememberMeTokensProvider.forModel(User)
+  //static rememberMeTokens = DbRememberMeTokensProvider.forModel(User)
   @column({ isPrimary: true })
   declare id: number
 
@@ -24,10 +24,7 @@ export default class User extends compose(BaseModel, AuthFinder) {
   declare mobile: string
 
   @column()
-  declare role: string
-
-  @column()
-  declare status: string
+  declare token: string
 
   @column({ serializeAs: null })
   declare password: string

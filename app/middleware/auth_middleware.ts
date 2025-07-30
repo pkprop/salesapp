@@ -19,7 +19,11 @@ export default class AuthMiddleware {
       guards?: (keyof Authenticators)[]
     } = {}
   ) {
-    await ctx.auth.authenticateUsing(options.guards, { loginRoute: this.redirectTo })
+    if(ctx.request.url().startsWith('/admin')){
+      await ctx.auth.authenticateUsing(options.guards, { loginRoute:'/admin' })
+    }else{
+      await ctx.auth.authenticateUsing(options.guards, { loginRoute: this.redirectTo })
+    }
     return next()
   }
 }

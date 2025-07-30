@@ -1,12 +1,17 @@
 import { defineConfig } from '@adonisjs/inertia'
 import type { InferSharedProps } from '@adonisjs/inertia/types'
-
+import type { HttpContext } from '@adonisjs/core/http'
 const inertiaConfig = defineConfig({
   /**
    * Path to the Edge view that will be used as the root view for Inertia responses
    */
-  rootView: 'inertia_layout',
-
+ rootView: ({ request }: HttpContext) => {
+      
+      if (request.url().startsWith('/admin')) {
+         return 'admin_layout'
+      }
+      return 'front_layout'
+    },
   /**
    * Data that should be shared with all rendered pages
    */
