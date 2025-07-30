@@ -34,8 +34,8 @@ function Login() {
     <section className="log-in-section background-image-2 section-b-space">
         <div className="container-fluid-lg w-99">
             <div className="row">
-                <div className='col-xxl-12 col-xl-12 col-lg-12 m-b-4'>
-                    <div className="log-in-header justify-content-center d-flex">
+                <div className='col-xxl-12 col-xl-12 col-lg-12'>
+                    <div className="log-in-header justify-content-center d-flex m-b-2">
                         <Link href="/admin" className="logo">
                             <img src="/propertyxpo-logo-green.png" className="img-fluid" alt="" />
                         </Link>
@@ -43,7 +43,7 @@ function Login() {
                 </div>
                 <div className="col-xxl-6 col-xl-5 col-lg-6 d-lg-block d-none ms-auto">
                     <div className="image-contain">
-                        <img src="/images/login_page.jpg" className="img-fluid" alt="" />
+                        {/* <img src="/images/login_page.jpg" className="img-fluid" alt="" /> */}
                     </div>
                 </div>
                 <div className="col-xxl-4 col-xl-5 col-lg-6 col-sm-8 mx-auto">

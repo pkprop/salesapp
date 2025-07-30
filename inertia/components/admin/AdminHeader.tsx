@@ -15,7 +15,7 @@ interface MainMenuProps {
             <div className="header-logo-wrapper p-0">
                 <div className="logo-wrapper">
                     <Link href="/admin/dashboard">
-                        Nextbuying.in
+                        PropertyXpo
                     </Link>
                 </div>
                 <div className="toggle-sidebar">
@@ -105,7 +105,7 @@ interface MainMenuProps {
                             </div> */}
                         </div>
                         <ul className="profile-dropdown onhover-show-div">
-                            <li>
+                            {/* <li>
                                <Link href="/admin/customers">
                                     <i className="ri-user-3-line"></i>
                                     <span>Customers</span>
@@ -128,7 +128,7 @@ interface MainMenuProps {
                                     <i className="ri-settings-line"></i>
                                     <span>Settings</span>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link href="/admin/logout">
                                     <i className="ri-logout-circle-r-line"></i>

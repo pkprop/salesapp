@@ -18,11 +18,18 @@ router.get('/csrf-token', async ({ response, request }) => {
 router.on('/').renderInertia('front/home')
 
 router.group(() => {
-    router.on('/').renderInertia('admin/auth/login')
-    router.on('/login').renderInertia('admin/auth/login')
-    router.post('/login',[AuthController,'login'])
-    //router.get('/create',[AuthController,'createUser'])
+
+    router.on('/').renderInertia('admin/auth/login').use(middleware.guest())
+    router.on('/login').renderInertia('admin/auth/login').use(middleware.guest())
+    router.post('/login',[AuthController,'login']).use(middleware.guest())
+    router.get('/create',[AuthController,'createUser'])
+
      router.group(() => {
+        router.get('/logout', async ({ auth, response }) => {
+            await auth.use('web').logout()
+            return response.redirect('/admin')
+        })
+        
         router.get('/dashboard',[DashboardController,'index'])
 
      }).middleware(middleware.auth())

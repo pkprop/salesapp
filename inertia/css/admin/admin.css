@@ -44225,3 +44225,9 @@ html[dir="rtl"] .grow svg{
 .w-99{
     width: 99% !important;
 }
+.m-b-4{
+    margin-bottom: 4rem;
+}
+.m-b-2{
+    margin-bottom: 2rem;
+}
