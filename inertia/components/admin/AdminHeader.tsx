@@ -28,7 +28,9 @@ interface MainMenuProps {
                     </Link>
                 </div>
             </div>
-
+            <div className="nav-left">
+              <p className='text-center'>Welcome to the SalesApp Dashboard</p>
+            </div>
             {/* <form className="form-inline search-full" action="/" method="get">
                 <div className="form-group w-100">
                     <div className="Typeahead Typeahead--twitterUsers">

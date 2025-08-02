@@ -456,7 +456,7 @@ input {
   color: #2f2c2c !important; }
 
 .c-primary {
-  color: #4cc2c0; }
+  color: #942173; }
 
 .c-secondary {
   color: #f15b26 !important; }
@@ -643,7 +643,7 @@ input {
   border-radius: 20px; }
   .icon-demonstration i {
     font-size: 32px;
-    color: #4cc2c0; }
+    color: #942173; }
   .icon-demonstration pre {
     font-size: 12px;
     color: red; }
@@ -652,13 +652,13 @@ input {
     line-height: 2; }
 
 .bg-primary-color {
-  background-color: #4cc2c0; }
+  background-color: #5fc5de; }
 
 .bg-secondary-color {
-  background-color: #f15b26; }
+  background-color: #dd0c5b; }
 
 .bg-orange-color {
-  background-color: #fcb03b; }
+  background-color: #facd0a; }
 
 .bg-orangedark-color {
   background-color: #ff9700; }
@@ -676,7 +676,7 @@ input {
   background-color: #6739b6; }
 
 .bg-border-color {
-  background-color: #f7f9f9; }
+  background-color: #872478; }
 
 .bg-dark-color {
   background-color: #302c2d; }
@@ -721,7 +721,7 @@ input {
   border-color: #3cb878; }
 
 .border-primary-color {
-  border-color: #4cc2c0; }
+  border-color: #942173; }
 
 .border-secondary-color {
   border-color: #f15b26; }
@@ -867,7 +867,7 @@ h6, .h6 {
   position: relative;
   width: 70px;
   height: 70px;
-  background-color: #4cc2c0;
+  background-color: #942173;
   border-radius: 5px;
   float: left;
   margin-right: 20px;
@@ -887,7 +887,7 @@ h6, .h6 {
   margin-right: 20px;
   font-size: 48px;
   line-height: 48px;
-  color: #4cc2c0;
+  color: #942173;
   float: left; }
 
 /*------------- #Styles for Text Selection --------------*/
@@ -902,11 +902,11 @@ h6, .h6 {
 
 /*Selection primary*/
 .selection--primary::-moz-selection {
-  background: #4cc2c0;
+  background: #942173;
   color: #fff; }
 
 .selection--primary::selection {
-  background: #4cc2c0;
+  background: #942173;
   color: #fff; }
 
 /*Selection gray*/
@@ -948,10 +948,10 @@ h6, .h6 {
   color: #f15b26; }
 
 .list--primary a:hover, .list--primary li:hover {
-  color: #4cc2c0; }
+  color: #942173; }
 
 .list--primary i {
-  color: #4cc2c0; }
+  color: #942173; }
 
 .list--standard a:hover, .list--standard li:hover {
   color: #2f2c2c; }
@@ -965,5 +965,9 @@ h6, .h6 {
   list-style: none;
   padding: 0;
   margin: 0; }
+
+  .text-white{
+    color: #ffffff !important;
+  }
 
 /*# sourceMappingURL=maps/base.css.map */

@@ -1,8 +1,8 @@
 :root{
-    --theme-color: #f58634
+    --theme-color: #942173
 }
 :root{
-    --theme-color: #f58634
+    --theme-color: #942173
 }
 .font-roboto{
     font-family:"Public Sans",sans-serif
@@ -898,12 +898,12 @@
     color:var(--theme-secondary) !important
 }
 .btn-primary{
-    background-color:#f58634 !important;
-    border-color:#f58634 !important
+    background-color:#942173 !important;
+    border-color:#942173 !important
 }
 .btn-primary.disabled,.btn-primary:disabled{
-    background-color:#f58634 !important;
-    border-color:#f58634 !important
+    background-color:#942173 !important;
+    border-color:#942173 !important
 }
 .btn-primary:focus{
     -webkit-box-shadow:0 0 0 0.2rem #58f2d4;
@@ -3661,7 +3661,7 @@ strong ~ p{
 }
 .btn-theme{
     /* background-color:#0da487; */
-    background-color:#f58634;
+    background-color:#942173;
     color:#fff;
     display:-webkit-box;
     display:-ms-flexbox;
@@ -10054,11 +10054,11 @@ strong ~ p{
     left:-42px;
     width:25px;
     height:25px;
-    border:2px solid #ff7272;
+    border:2px solid #942173;
     border-radius:50%;
-    background-color:#ff7272;
-    -webkit-box-shadow:0 0 10px #ff7272;
-    box-shadow:0 0 10px #ff7272
+    background-color:#942173;
+    -webkit-box-shadow:0 0 10px #942173;
+    box-shadow:0 0 10px #942173
 }
 .to-do-list .to-do-item{
     display:-webkit-box;
@@ -37745,7 +37745,7 @@ body[class*="dark-"] .main-white{
     font-size:11px;
     font-weight:700;
     font-family:"Public Sans",sans-serif;
-    background-color:#ff7272
+    background-color:#942173
 }
 .page-wrapper .page-header .header-wrapper .nav-right>ul>li span.lnr{
     font-weight:600
@@ -38490,7 +38490,7 @@ body[class*="dark-"] .main-white{
     box-shadow:0 0 21px 0 rgba(89,102,122,0.1);
     /* background:linear-gradient(-45deg, #0da487, #009289, #ffa53b); */
     /* background:linear-gradient(-45deg, #f58634, #f58634, #f58634); */
-     background:linear-gradient(-45deg, #f58634, #f56a34, #f58634);
+     background:linear-gradient(-45deg, #942173, #f56a34, #942173);
     
     background-size:400% 400%;
     -webkit-animation:gradient 15s ease infinite;
