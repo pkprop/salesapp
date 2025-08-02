@@ -8,9 +8,9 @@ const inertiaConfig = defineConfig({
  rootView: ({ request }: HttpContext) => {
       
       if (request.url().startsWith('/admin')) {
-         return 'admin_layout'
+         return 'layouts/admin_layout'
       }
-      return 'front_layout'
+      return 'layouts/front_layout'
     },
   /**
    * Data that should be shared with all rendered pages
@@ -31,5 +31,5 @@ const inertiaConfig = defineConfig({
 export default inertiaConfig
 
 declare module '@adonisjs/inertia/types' {
-  export interface SharedProps extends InferSharedProps<typeof inertiaConfig> {}
+    export interface SharedProps extends InferSharedProps<typeof inertiaConfig> {}
 }

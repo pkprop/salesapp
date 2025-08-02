@@ -21,7 +21,7 @@ const AdminNavBar = ({mobileToggle,setMobileToggle}:any) => {
                 <div>
                     <div className="logo-wrapper logo-wrapper-center">
                         <Link href="/admin/dashboard">
-                            PrpertyXpo
+                            SalesApp
                         </Link>
                         <div className="back-btn">
                             <button onClick={()=>{setMobileToggle(!mobileToggle)}}>

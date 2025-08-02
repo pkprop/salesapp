@@ -9,13 +9,15 @@
 
 import router from '@adonisjs/core/services/router'
 import { middleware } from '#start/kernel'
+const FrontController = ()=> import('#controllers/front_controller')
 const AuthController = ()=> import('#controllers/admin/auth_controller')
 const DashboardController =()=> import('#controllers/admin/dashboard_controller')
 
 router.get('/csrf-token', async ({ response, request }) => {
     return response.json({ csrfToken: request.csrfToken})
 })
-router.on('/').renderInertia('front/home')
+router.get('/',[FrontController,'home'])
+//router.on('/').renderInertia('front/home')
 
 router.group(() => {
 

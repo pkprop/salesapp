@@ -8,7 +8,7 @@ function DashboardPage(){
           <div className='row'>
             <div className='col-12'>
               <h3 className='text-center'>Dashboard</h3>
-              <p className='text-center'>Welcome to the PropertyXpo Admin Dashboard</p>
+              <p className='text-center'>Welcome to the SalesApp Admin Dashboard</p>
             </div>
           </div>
           </div>

@@ -37,7 +37,7 @@ function Login() {
                 <div className='col-xxl-12 col-xl-12 col-lg-12'>
                     <div className="log-in-header justify-content-center d-flex m-b-2">
                         <Link href="/admin" className="logo">
-                            <img src="/propertyxpo-logo-green.png" className="img-fluid" alt="" />
+                            <img src="/salesapp-logo.png" className="img-fluid" alt="" />
                         </Link>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ function Login() {
                 <div className="col-xxl-4 col-xl-5 col-lg-6 col-sm-8 mx-auto">
                     <div className="log-in-box">
                         <div className="log-in-title">
-                            <h3>Welcome To PropertyXpo</h3>
+                            <h3>Welcome To SalesApp</h3>
                             <h4>Log In Your Account</h4>
                         </div>
                         <div className="input-box">

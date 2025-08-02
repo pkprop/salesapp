@@ -1,5 +1,5 @@
 import { Link,usePage } from "@inertiajs/react";
-import { RegUser } from '../../types';
+// import { RegUser } from '../../types';
 
 interface MainMenuProps {
     className?: string;
@@ -7,7 +7,7 @@ interface MainMenuProps {
     mobileToggle:boolean
 }
   const AdminHeader = ({ className,setMobileToggle,mobileToggle }: MainMenuProps) => {
-     const { user } = usePage<{ user: RegUser[] }>().props;
+     const { user } = usePage<{ user: any }>().props;
     // console.log(user,'User Data Header');
     return (
         <div className="page-header">
@@ -15,7 +15,7 @@ interface MainMenuProps {
             <div className="header-logo-wrapper p-0">
                 <div className="logo-wrapper">
                     <Link href="/admin/dashboard">
-                        PropertyXpo
+                        SalesApp
                     </Link>
                 </div>
                 <div className="toggle-sidebar">
@@ -24,7 +24,7 @@ interface MainMenuProps {
                     </button>
                    
                     <Link href="/admin/dashboard">
-                        NXB
+                        SalesApp
                     </Link>
                 </div>
             </div>
@@ -56,7 +56,7 @@ interface MainMenuProps {
                             <i className="ri-notification-line"></i>
                             <span className="badge rounded-pill badge-theme">4</span>
                         </div>
-                        <ul className="notification-dropdown onhover-show-div">
+                        {/* <ul className="notification-dropdown onhover-show-div">
                             <li>
                                 <i className="ri-notification-line"></i>
                                 <h6 className="f-18 mb-0">Notitications</h6>
@@ -88,7 +88,7 @@ interface MainMenuProps {
                             <li>
                                 <a className="btn btn-primary" href="/">Check all notification</a>
                             </li>
-                        </ul>
+                        </ul> */}
                     </li>
 
                     <li>
