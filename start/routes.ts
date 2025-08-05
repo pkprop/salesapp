@@ -19,7 +19,14 @@ router.get('/csrf-token', async ({ response, request }) => {
     return response.json({ csrfToken: request.csrfToken})
 })
 router.get('/',[FrontController,'home'])
-//router.on('/').renderInertia('front/home')
+router.get('/contact-us',[FrontController,'contact'])
+router.post('/save-contact',[FrontController,'saveContact'])
+router.post('/save-newslatter',[FrontController,'saveNewslatter'])
+
+//save-contact
+
+
+
 
 router.group(() => {
 

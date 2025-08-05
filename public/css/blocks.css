@@ -477,7 +477,9 @@
       border-radius: 100%;
       -webkit-transition: all .3s ease;
       -o-transition: all .3s ease;
-      transition: all .3s ease; }
+      transition: all .3s ease; 
+      margin: auto;
+    }
   .info-box--standard-centered .info-box-content {
     margin-bottom: 30px; }
     .info-box--standard-centered .info-box-content .info-box-title {
@@ -2082,7 +2084,7 @@ body.author .blog-details-author {
 
 /*------------- #INPUT --------------*/
 input {
-  padding: 20px 40px;
+  padding: 20px 40px !important;
   border-color: transparent;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -2109,7 +2111,7 @@ input {
     background-color: #fff; }
 
 textarea {
-  padding: 20px 40px;
+  padding: 20px 40px !important;
   border-color: transparent;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -2117,7 +2119,7 @@ textarea {
   font-size: 16px;
   color: #acacac;
   height: 100%;
-  margin-bottom: 30px; }
+  margin-bottom: 30px !important; }
   textarea.input-standard-grey {
     border-radius: 50px;
     background-color: #f7f9f9; }

@@ -1,0 +1,148 @@
+@layout.app({ title: "Welcome To app" })
+ @slot('main')
+    <div class="content-wrapper">
+		<div class="stunning-header stunning-header-bg-blue">
+			<div class="stunning-header-content">
+				<h1 class="stunning-header-title">Contact Information</h1>
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs-item">
+						<a href="/">Home</a>
+						<i class="seoicon-right-arrow"></i>
+					</li>
+					<li class="breadcrumbs-item active">
+						<span href="#">Contact Information</span>
+						<i class="seoicon-right-arrow"></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	<div class="container">
+		<div class="row pt120 pb80">
+			<div class="col-lg-12">
+				<div class="heading">
+					<h4 class="h1 heading-title">Get In Touch</h4>
+					<div class="heading-line">
+						<span class="short-line"></span>
+						<span class="long-line"></span>
+					</div>
+					<p class="heading-text">A new perspective on crafting digital experiences — Glimpse is an award-winning digital marketing agency with over a decade of internationally recognized expertise. We bring a proactive and innovative approach to the design and development of digital solutions, always with a hands-on mindset. Available 24/7/365, we’re here whenever you need us — feel free to reach out anytime!
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="container-fluid">
+		<div class="row medium-padding80 bg-border-color contacts-shadow">
+			<div class="container">
+				<div class="row">
+					<div class="contacts">
+						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+							<div class="contacts-item">
+								<img loading="lazy" src="img/contact7.png" alt="phone">
+								<div class="content text-white">
+									<a href="#" class="title">Gurugram, India</a>
+									<p class="sub-title">201-203, Tower-A, 2nd Floor, Spazedge, Sector 47, Gurugram, 122002</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+							<div class="contacts-item">
+								<img loading="lazy" src="img/contact8.png" alt="phone">
+								<div class="content text-white">
+									<a href="#" class="title">info@salesapp.in</a>
+									<p class="sub-title">Online Support</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+							<div class="contacts-item">
+								<img loading="lazy" src="img/contact9.png" alt="phone">
+								<div class="content text-white">
+									<a href="#" class="title">9871354814</a>
+									<p class="sub-title">Mon-Fri 9am-7pm</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div id="map"></div>
+	</div>
+
+	<div class="container">
+		<div class="contact-form medium-padding120">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="heading">
+						<h4 class="heading-title">Need more info? Just ask!</h4>
+						<div class="heading-line">
+							<span class="short-line"></span>
+							<span class="long-line"></span>
+						</div>
+						<p class="heading-text">Kindly reach out to us via the form, and we’ll respond at the earliest possible opportunity.</p>
+					</div>
+				</div>
+			</div>
+
+			<form id="contact-form" class="contact-form crumina-submit" method="post" data-nonce="crumina-submit-form-nonce" data-type="standard" action="/save-contact">
+				<div class="row">
+					<input type="hidden" name="_csrf" value="{{ csrfToken }}">
+					{{ csrfField() }}
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<input name="name" class="input-standard-grey" placeholder="Your Name" type="text" required>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<input name="email" class="input-standard-grey" placeholder="Email Address" type="email" required>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<input name="phone" class="input-standard-grey" placeholder="Phone" type="tel" required>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<input class="input-standard-grey" name="url" type="text" placeholder="Website URL">
+				</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<textarea name="message" class="input-standard-grey" placeholder="Details"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div id="error"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="submit-block table">
+						<div class="col-lg-3 table-cell">
+							<button class="btn btn-small btn--primary">
+								<span class="text">Submit Now</span>
+							</button>
+						</div>
+
+						<div class="col-lg-5 table-cell">
+							<div class="submit-block-text">
+								Please let us know if there’s anything specific you’d like us to check, and the best time to reach you by phone (if applicable).
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+		@!component('components/home/newslatter',{})
+    </div>
+
+ @endslot
+@end

@@ -466,7 +466,7 @@ var CRUMINA = {};
                 config: {
                     id: "map",
                     map: {
-                        center: new L.LatLng(38.897663, -77.036575),
+                        center: new L.LatLng(28.420275141242687, 77.04068356791369),
                         zoom: 12,
                         maxZoom: 18,
                         layers: new L.tileLayer("https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png", {
@@ -481,8 +481,8 @@ var CRUMINA = {};
                     }
                 },
                 markers: [{
-                    coords: [38.897663, -77.036575],
-                    icon: "marker-google.png"
+                    coords: [28.420275141242687, 77.04068356791369],
+                    icon: "contact6.png"
                 }]
             }
         },
@@ -532,4 +532,6 @@ var CRUMINA = {};
             header: "#site-header"
         })), CRUMINA.animateSvg(), CRUMINA.counters(), CRUMINA.progresBars(), CRUMINA.pieCharts(), e(".subscribe").length && CRUMINA.SubscribeScrollAnnimation(), e(".seo-score").length && CRUMINA.SeoScoreScrollAnnimation(), e(".testimonial-slider").length && CRUMINA.TestimonialScrollAnnimation(), e(".our-vision").length && CRUMINA.OurVisionScrollAnnimation(), e(".background-mountains").length && CRUMINA.MountainsScrollAnnimation()
     })
+
+    
 }(jQuery);

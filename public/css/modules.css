@@ -2099,7 +2099,9 @@
   position: relative; }
   @media (max-width: 640px) {
     .subscribe {
-      padding: 70px 0 170px; } }
+      padding: 70px 0 170px; 
+    } 
+  }
   .subscribe .subscribe-title {
     font-size: 30px;
     color: #fff;
@@ -2111,7 +2113,7 @@
     margin-bottom: 25px; }
     .subscribe .subscribe-form input {
       background-color: #fff;
-      padding: 16px 40px;
+      padding: 16px 40px !important;
       font-size: 16px;
       color: #797676;
       border-color: transparent;
