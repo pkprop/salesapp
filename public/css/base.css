@@ -970,4 +970,8 @@ h6, .h6 {
     color: #ffffff !important;
   }
 
+  .footer-wave{
+    position:relative;
+    background-color: #426b75;
+  }
 /*# sourceMappingURL=maps/base.css.map */
