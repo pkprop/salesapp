@@ -1,9 +1,9 @@
 var data = {
     labels: [
-        "Claritas est etiam processus",
-        "Mirum est notare quam littera",
-        "Investigationes demonstraverunt",
-        "Eodem modo typi"
+        "Brand Monitoring",
+        "Social Media Management",
+        "Setup & Custom Profile Design",
+        "Social Media Contests"
     ],
     datasets: [
         {

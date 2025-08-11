@@ -1,0 +1,12 @@
+@layout.app({ title: "Welcome To app" })
+ @slot('main')
+    <div class="content-wrapper">
+	@!component('components/pageHeader',{title:'Social Media Marketing'})
+	
+
+	
+	@!component('components/home/newslatter',{})
+    </div>
+
+ @endslot
+@end

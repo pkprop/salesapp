@@ -3496,13 +3496,17 @@ Main Components
 .teammembers-item {
   text-align: center; }
   .teammembers-item img {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    margin: auto;
+  }
   .teammembers-item .teammembers-item-name {
     margin-bottom: 5px; }
   .teammembers-item .teammembers-item-prof {
     margin-bottom: 15px; }
   .teammembers-item .socials .social__item {
-    margin-left: 10px; }
+    margin-left: 10px; 
+    display: inline-block;
+  }
 
 /*------------- #SKILLS --------------*/
 .skills .skills-item {

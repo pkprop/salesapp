@@ -43,6 +43,7 @@ export default class Blog extends BaseModel {
   
   @belongsTo(() => BlogCategory, { foreignKey: 'category_id' })
   public category!: BelongsTo<typeof BlogCategory>
+  
   @belongsTo(() => User, { foreignKey: 'user_id' })
   public user!: BelongsTo<typeof User>
 

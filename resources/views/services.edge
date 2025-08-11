@@ -1,0 +1,313 @@
+@layout.app({ title: "Welcome To app" })
+ @slot('main')
+    <div class="content-wrapper">
+		@!component('components/pageHeader',{title:'Our Services'})
+		
+    
+	<div class="container">
+		<div class="row pt120 pb30">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="services-main">
+					<div class="heading">
+						<h4 class="h1 heading-title">Full Services of Our Digital Agency</h4>
+						<div class="heading-line">
+							<span class="short-line"></span>
+							<span class="long-line"></span>
+						</div>
+						<p class="heading-text">At SalesApp, we offer a complete suite of digital marketing services tailored to help businesses attract, engage, and convert their ideal customers. From strategy to execution, our team delivers performance-driven solutions designed for measurable growth.
+						</p>
+					</div>
+
+					{{-- <a href="21_seo_analysis.html" class="btn btn-medium btn--dark btn-hover-shadow">
+						<span class="text">Free SEO Analysis</span>
+						<span class="semicircle"></span>
+					</a> --}}
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="servises-item bg-violet-color">
+					<div class="servises-item__thumb">
+						<img loading="lazy" src="img/services1.png" alt="service">
+					</div>
+					<div class="servises-item__content">
+						<h4 class="servises-title">Search Engine Optimization</h4>
+						<p class="servises-text">
+              Improve your search visibility, rank higher on Google, and drive organic traffic that converts.
+						</p>
+					</div>
+
+					<a href="/search-engine-optimization" class="read-more"><i class="seoicon-right-arrow"></i></a>
+
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="servises-item bg-primary-color">
+					<div class="servises-item__thumb">
+						<img loading="lazy" src="img/services2.png" alt="service">
+					</div>
+					<div class="servises-item__content">
+						<h4 class="servises-title">Branding</h4>
+						<p class="servises-text">
+              Build a strong brand identity that resonates with your audience and sets you apart in the market.
+						</p>
+					</div>
+
+					<a href="/branding" class="read-more"><i class="seoicon-right-arrow"></i></a>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row pb120">
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="servises-item bg-secondary-color">
+					<div class="servises-item__thumb">
+						<img loading="lazy" src="img/services3.png" alt="service">
+					</div>
+					<div class="servises-item__content">
+						<h4 class="servises-title">Social Media Marketing</h4>
+						<p class="servises-text">
+              Engage your audience on social media platforms, build community, and drive brand loyalty.
+						</p>
+					</div>
+
+					<a href="/social-media-marketing" class="read-more"><i class="seoicon-right-arrow"></i></a>
+
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="servises-item bg-orange-color">
+					<div class="servises-item__thumb">
+						<img loading="lazy" src="img/services4.png" alt="service">
+					</div>
+					<div class="servises-item__content">
+						<h4 class="servises-title">Email Marketing</h4>
+						<p class="servises-text">
+              Reach your customers directly with targeted email campaigns that drive engagement and conversions.
+						</p>
+					</div>
+
+					<a href="/email-marketing" class="read-more"><i class="seoicon-right-arrow"></i></a>
+
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				<div class="servises-item bg-green-color">
+					<div class="servises-item__thumb">
+						<img loading="lazy" src="img/services5.png" alt="service">
+					</div>
+					<div class="servises-item__content">
+						<h4 class="servises-title">Pay Per Click Management</h4>
+						<p class="servises-text">
+              Maximize your ROI with expertly managed PPC campaigns that target the right audience at the right time.
+						</p>
+					</div>
+
+					<a href="/pay-per-click-management" class="read-more"><i class="seoicon-right-arrow"></i></a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+  	<div class="container-fluid">
+		<div class="row bg-gray medium-padding120">
+			<div class="container">
+				<div class="row pb30">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="features-item">
+
+							<div class="features-item__thumb">
+								<img loading="lazy" src="img/features1.png" alt="image">
+							</div>
+
+							<div class="features-content">
+								<a href="#" class="features-title">Local Search Strategy</a>
+								<p class="features-text">
+                  Get found by customers near you with powerful local search and Google Maps strategies.
+								</p>
+							</div>
+
+							<a class="read-more" href="/local-search-strategy">Read More
+								<i class="seoicon-right-arrow"></i>
+							</a>
+
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="features-item">
+
+							<div class="features-item__thumb">
+								<img loading="lazy" src="img/features2.png" alt="image">
+							</div>
+
+							<div class="features-content">
+								<a href="#" class="features-title">Maps Search</a>
+								<p class="features-text">
+                  Enhance your visibility on Google Maps and attract local customers with optimized listings.
+								</p>
+							</div>
+
+							<a class="read-more" href="/map-search">Read More
+								<i class="seoicon-right-arrow"></i>
+							</a>
+
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="features-item">
+
+							<div class="features-item__thumb">
+								<img loading="lazy" src="img/features3.png" alt="image">
+							</div>
+
+							<div class="features-content">
+								<a href="#" class="features-title">Link Building & Content</a>
+								<p class="features-text">
+                  Build authority and trust with high-quality backlinks and engaging content that resonates with your audience.
+								</p>
+							</div>
+
+							<a class="read-more" href="/content-writing">Read More
+								<i class="seoicon-right-arrow"></i>
+							</a>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="features-item">
+
+							<div class="features-item__thumb">
+								<img loading="lazy" src="img/features4.png" alt="image">
+							</div>
+
+							<div class="features-content">
+								<a href="#" class="features-title">Paid Search Advertising</a>
+								<p class="features-text">
+                  Drive targeted traffic and increase conversions with expertly managed paid search campaigns.
+								</p>
+							</div>
+
+							<a class="read-more" href="/influencer-marketing">Read More
+								<i class="seoicon-right-arrow"></i>
+							</a>
+
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="features-item">
+
+							<div class="features-item__thumb">
+								<img loading="lazy" src="img/features6.png" alt="image">
+							</div>
+
+							<div class="features-content">
+								<a href="#" class="features-title">Custom Website Design</a>
+								<p class="features-text">
+                  Create a stunning, user-friendly website that reflects your brand and drives conversions.
+								</p>
+							</div>
+
+							<a class="read-more" href="/website-design">Read More
+								<i class="seoicon-right-arrow"></i>
+							</a>
+
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="features-item">
+
+							<div class="features-item__thumb">
+								<img loading="lazy" src="img/features5.png" alt="image">
+							</div>
+
+							<div class="features-content">
+								<a href="#" class="features-title">Custom Email Design</a>
+								<p class="features-text">
+                  Engage your audience with beautifully designed email campaigns that drive results.
+								</p>
+							</div>
+
+							<a class="read-more" href="/email-marketing">Read More
+								<i class="seoicon-right-arrow"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <div class="container pb120 pt120">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="heading">
+					<h4 class="h1 heading-title">Our Product Based Services</h4>
+					<div class="heading-line">
+						<span class="short-line"></span>
+						<span class="long-line"></span>
+					</div>
+					<p class="heading-text c-dark">
+            Explore our range of product-based services designed to enhance your business operations and drive growth. From custom software development to mobile app solutions, we provide innovative products that meet your unique needs.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row pb30">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<ul class="list list--secondary">
+					<li>
+						<i class="seoicon-check"></i>
+						<a href="/website-developement">
+              Custom Software Development: Tailored software solutions that fit your business requirements perfectly.
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<ul class="list list--secondary">
+					<li>
+						<i class="seoicon-check"></i>
+						<a href="/mobile-app-developement">
+              Mobile App Development: Create engaging mobile applications for iOS and Android platforms to reach your audience on the go.
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
+				<a href="/mobile-app-developement" class="btn btn-medium btn--blue">
+					<span class="text">Mobile App</span>
+					<span class="semicircle"></span>
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
+				<a href="/contact-us" class="btn btn-medium btn--yellow">
+					<span class="text">Request a Free Quote</span>
+					<span class="semicircle"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+
+		@!component('components/home/newslatter',{})
+    </div>
+
+ @endslot
+@end

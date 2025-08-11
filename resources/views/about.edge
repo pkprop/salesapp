@@ -1,0 +1,371 @@
+@layout.app({ title: "Welcome To app" })
+ @slot('main')
+    <div class="content-wrapper">
+	@!component('components/pageHeader',{title:'About Us'})
+        <section class="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="heading mb30">
+                            <h4 class="h1 heading-title">About Us</h4>
+                            <div class="heading-line">
+                                <span class="short-line"></span>
+                                <span class="long-line"></span>
+                            </div>
+                            <h5 class="heading-subtitle">We are a digital marketing agency dedicated to helping businesses grow online. Our team of experts specializes in various aspects of digital marketing, including SEO, PPC, social media marketing, and more.
+                            </h5>
+                             {{-- <p class="text">We are a digital marketing agency dedicated to helping businesses grow online. Our team of experts specializes in various aspects of digital marketing, including SEO, PPC, social media marketing, and more.</p> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+    <div class="container">
+
+		    <div class="row">
+
+			<div class="col-lg-12">
+
+				<section class="cd-horizontal-timeline">
+					<div class="timeline">
+						<div class="events-wrapper">
+							<div class="events">
+								<ol>
+									<li><a href="#0" data-date="16/12/2011" class="selected">2011</a></li>
+									<li><a href="#0" data-date="28/09/2012">2012</a></li>
+									<li><a href="#0" data-date="05/01/2013">2013</a></li>
+									<li><a href="#0" data-date="10/09/2014">2014</a></li>
+									<li><a href="#0" data-date="07/05/2015">2015</a></li>
+									<li><a href="#0" data-date="20/12/2016">2016</a></li>
+									<!-- other dates here -->
+								</ol>
+
+								<span class="filling-line" aria-hidden="true"></span>
+							</div> <!-- .events -->
+						</div> <!-- .events-wrapper -->
+
+						<ul class="cd-timeline-navigation">
+							<li><a href="#0" class="prev inactive seoicon-play">Prev</a></li>
+							<li><a href="#0" class="next seoicon-play">Next</a></li>
+						</ul> <!-- .cd-timeline-navigation -->
+					</div> <!-- .timeline -->
+
+					<div class="events-content">
+						<ol>
+							<li class="selected" data-date="16/12/2011">
+								<div class="row">
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
+										<div class="time-line-thumb">
+											<img loading="lazy" src="img/time-line-thumb.png" alt="time-line">
+										</div>
+									</div>
+
+									<div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-9 col-xs-12 table-cell">
+										<div class="time-line-content">
+											<h6 class="time-line-subtitle">Dec, 2011</h6>
+											<h5 class="time-line-title">Foundation of the Company</h5>
+											<p class="time-line-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+												saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+												lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+												lobortis nisl ut aliquip ex commodo est usus legentis in iis qui facit eorum.
+											</p>
+										</div>
+									</div>
+								</div>
+
+							</li>
+
+							<li data-date="28/09/2012">
+
+								<div class="row">
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
+										<div class="time-line-thumb">
+											<img loading="lazy" src="img/time-line-thumb.png" alt="time-line">
+										</div>
+									</div>
+
+									<div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-9 col-xs-12 table-cell">
+										<div class="time-line-content">
+											<h6 class="time-line-subtitle">Sept, 2012</h6>
+											<h5 class="time-line-title">Foundation of the Company</h5>
+											<p class="time-line-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+												saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+												lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+												lobortis nisl ut aliquip ex commodo est usus legentis in iis qui facit eorum.
+											</p>
+										</div>
+									</div>
+								</div>
+
+							</li>
+
+							<li data-date="05/01/2013">
+
+								<div class="row">
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
+										<div class="time-line-thumb">
+											<img loading="lazy" src="img/time-line-thumb.png" alt="time-line">
+										</div>
+									</div>
+
+									<div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-9 col-xs-12 table-cell">
+										<div class="time-line-content">
+											<h6 class="time-line-subtitle">Jan, 2013</h6>
+											<h5 class="time-line-title">Foundation of the Company</h5>
+											<p class="time-line-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+												saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+												lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+												lobortis nisl ut aliquip ex commodo est usus legentis in iis qui facit eorum.
+											</p>
+										</div>
+									</div>
+								</div>
+
+							</li>
+
+							<li class="" data-date="10/09/2014">
+								<div class="row">
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
+										<div class="time-line-thumb">
+											<img loading="lazy" src="img/time-line-thumb.png" alt="time-line">
+										</div>
+									</div>
+
+									<div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-9 col-xs-12 table-cell">
+										<div class="time-line-content">
+											<h6 class="time-line-subtitle">Sept, 2014</h6>
+											<h5 class="time-line-title">Foundation of the Company</h5>
+											<p class="time-line-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+												saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+												lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+												lobortis nisl ut aliquip ex commodo est usus legentis in iis qui facit eorum.
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li data-date="07/05/2015">
+
+								<div class="row">
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
+										<div class="time-line-thumb">
+											<img loading="lazy" src="img/time-line-thumb.png" alt="time-line">
+										</div>
+									</div>
+
+									<div class="col-lg-8 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 col-lg-offset-1 table-cell">
+										<div class="time-line-content">
+											<h6 class="time-line-subtitle">May, 2015</h6>
+											<h5 class="time-line-title">Foundation of the Company</h5>
+											<p class="time-line-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+												saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+												lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+												lobortis nisl ut aliquip ex commodo est usus legentis in iis qui facit eorum.
+											</p>
+										</div>
+									</div>
+								</div>
+
+							</li>
+
+							<li data-date="20/12/2016">
+
+								<div class="row">
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 table-cell">
+										<div class="time-line-thumb">
+											<img loading="lazy" src="img/time-line-thumb.png" alt="time-line">
+										</div>
+									</div>
+
+									<div class="col-lg-8 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 col-lg-offset-1 table-cell">
+										<div class="time-line-content">
+											<h6 class="time-line-subtitle">Dec, 2016</h6>
+											<h5 class="time-line-title">Foundation of the Company</h5>
+											<p class="time-line-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+												saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+												lectorum. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+												lobortis nisl ut aliquip ex commodo est usus legentis in iis qui facit eorum.
+											</p>
+										</div>
+									</div>
+								</div>
+
+							</li>
+
+							<!-- other descriptions here -->
+						</ol>
+					</div> <!-- .events-content -->
+				</section>
+
+			</div>
+
+		</div>
+
+	</div>
+
+    <section class="bg-gray">
+
+        <div class="container">
+		<div class="row  pt120 mb30">
+
+			<div class="col-lg-12">
+				<div class="heading align-center">
+					<h4 class="h1 heading-title">Meet with Our Best Experts</h4>
+					<div class="heading-line">
+						<span class="short-line"></span>
+						<span class="long-line"></span>
+					</div>
+					<p class="heading-text">
+                        Our team is composed of highly skilled professionals who are passionate about digital marketing. We work collaboratively to ensure that our clients receive the best possible service and results.
+                    </p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row pb120">
+
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="teammembers-item">
+					<img loading="lazy" src="img/teammember1.png" alt="team member">
+					<h5 class="teammembers-item-name">Peter Spenser</h5>
+					<p class="teammembers-item-prof">Copywriter</p>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="teammembers-item">
+					<img loading="lazy" src="img/teammember2.png" alt="team member">
+					<h5 class="teammembers-item-name">Angelina Johnson</h5>
+					<p class="teammembers-item-prof">SEO Specialist</p>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="teammembers-item">
+					<img loading="lazy" src="img/teammember3.png" alt="team member">
+					<h5 class="teammembers-item-name">Philip Demarco</h5>
+					<p class="teammembers-item-prof">Senior Developer</p>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="teammembers-item">
+					<img loading="lazy" src="img/teammember4.png" alt="team member">
+					<h5 class="teammembers-item-name">James Anderson</h5>
+					<p class="teammembers-item-prof">Business Analyst</p>
+
+					{{-- <div class="socials">
+						<a href="#" class="social__item">
+							<img loading="lazy" src="svg/circle-facebook.svg" alt="facebook">
+						</a>
+
+						<a href="#" class="social__item">
+							<img loading="lazy" src="svg/twitter.svg" alt="twitter">
+						</a>
+
+						<a href="#" class="social__item">
+							<img loading="lazy" src="svg/google.svg" alt="google">
+						</a>
+
+						<a href="#" class="social__item">
+							<img loading="lazy" src="svg/youtube.svg" alt="youtube">
+						</a>
+
+					</div> --}}
+				</div>
+			</div>
+
+		</div>
+	</div>
+    </section>
+	
+    <div class="container-fluid">
+		<div class="row bg-orangedark-color">
+
+			<div class="our-vision scrollme">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+							<div class="heading align-center">
+								<h4 class="h1 heading-title">Our Vision</h4>
+								<div class="heading-line">
+									<span class="short-line bg-yellow-color"></span>
+									<span class="long-line bg-yellow-color"></span>
+								</div>
+								<p class="heading-text c-white">
+                                    We are committed to delivering exceptional digital marketing solutions that drive results for our clients. Our vision is to be a leading agency known for innovation, creativity, and excellence in the digital marketing industry.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img loading="lazy" src="img/elements.png" class="elements" alt="elements">
+				<img loading="lazy" src="img/eye.png" class="eye" alt="eye">
+			</div>
+		</div>
+	</div>
+
+    <div class="container-fluid">
+		<div class="row medium-padding120">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-sx-12">
+						<div class="info-box--standard">
+							<div class="info-box-image f-none">
+								<img loading="lazy" src="img/info-box20.png" alt="image">
+							</div>
+							<div class="info-box-content">
+								<h5 class="info-box-title">Excellent Support</h5>
+								<p class="text">
+                                    Our team is dedicated to providing excellent support to our clients. We understand that every business is unique, and we work closely with you to develop customized strategies that meet your specific needs and goals.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-12 col-sx-12">
+						<div class="info-box--standard">
+							<div class="info-box-image f-none">
+								<img loading="lazy" src="img/info-box21.png" alt="image">
+							</div>
+							<div class="info-box-content">
+								<h5 class="info-box-title">Awesome Team</h5>
+								<p class="text">
+                                    Our team is composed of highly skilled professionals who are passionate about digital marketing. We work collaboratively to ensure that our clients receive the best possible service and results.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-12 col-sx-12">
+						<div class="info-box--standard">
+							<div class="info-box-image f-none">
+								<img loading="lazy" src="img/info-box22.png" alt="image">
+							</div>
+							<div class="info-box-content">
+								<h5 class="info-box-title">Faster Performance</h5>
+								<p class="text">
+                                    We pride ourselves on delivering faster performance and results for our clients. Our team utilizes the latest tools and techniques to ensure that your digital marketing campaigns are optimized for success.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+
+
+        
+	@!component('components/home/newslatter',{})
+    </div>
+
+ @endslot
+@end

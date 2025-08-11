@@ -19,9 +19,36 @@ router.get('/csrf-token', async ({ response, request }) => {
     return response.json({ csrfToken: request.csrfToken})
 })
 router.get('/',[FrontController,'home'])
+router.get('/services',[FrontController,'services'])
+router.get('/performance-marketing',[FrontController,'performanceMarketing'])
+router.get('/email-marketing',[FrontController,'emailMarketing'])
+router.get('/sms-marketing',[FrontController,'smsMarketing'])
+router.get('/social-media-marketing',[FrontController,'socialMediaMarketing'])
+router.get('/search-engine-optimization',[FrontController,'searchEngineOptimization'])
+router.get('/pay-per-click-management',[FrontController,'ppcManagement'])
+router.get('/influencer-marketing',[FrontController,'influencerMarketing'])
+
+router.get('/website-design',[FrontController,'emailMarketing'])
+router.get('/website-developement',[FrontController,'emailMarketing'])
+router.get('/ux-ui-design',[FrontController,'emailMarketing'])
+router.get('/gtm-integration',[FrontController,'emailMarketing'])
+router.get('/analytics-audit',[FrontController,'emailMarketing'])
+router.get('/cro',[FrontController,'emailMarketing'])
+
+router.get('/content-writing',[FrontController,'emailMarketing'])
+router.get('/graphic-design',[FrontController,'emailMarketing'])
+router.get('/videos',[FrontController,'emailMarketing'])
+
+
 router.get('/contact-us',[FrontController,'contact'])
 router.post('/save-contact',[FrontController,'saveContact'])
 router.post('/save-newslatter',[FrontController,'saveNewslatter'])
+
+router.get('/about-us',[FrontController,'aboutUs'])
+router.get('/blogs',[FrontController,'blogs'])
+router.get('/terms-conditions',[FrontController,'contact'])
+router.get('/privacy-policy',[FrontController,'contact'])
+
 
 //save-contact
 

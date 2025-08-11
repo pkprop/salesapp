@@ -1,13 +1,58 @@
 import type { HttpContext } from '@adonisjs/core/http'
 import Inquiry from '#models/inquiry'
 import Newslatter from '#models/newslatter'
+import Blog from '#models/blog'
 export default class FrontController {
 
     async home({view}:HttpContext){
-        return view.render('home')
+        try {
+            const blogs = await Blog.query().preload('category').preload('user').where('blog_status', 'published').orderBy('created_at', 'desc').limit(10)
+            //console.log(blogs,'blogs')
+            return view.render('home',{blogs})
+        } catch (error) {
+            return view.render('error', { message: 'An error occurred while loading the home page.' })
+        }
     }
 
+    async services({view}:HttpContext){
+        return view.render('services')
+    }
+    async performanceMarketing({view}:HttpContext){
+        return view.render('performance-marketing')
+    }
+    async socialMediaMarketing({view}:HttpContext){
+        return view.render('social-media-marketing')
+    }
+
+    async emailMarketing({view}:HttpContext){
+        return view.render('email-marketing')
+    }
+
+    async smsMarketing({view}:HttpContext){
+        return view.render('sms-marketing')
+    }
+
+    async searchEngineOptimization({view}:HttpContext){
+        return view.render('search-engine-optimization')
+    }
+
+    async ppcManagement({view}:HttpContext){
+        return view.render('pay-per-click-management')
+    }
+    async influencerMarketing({view}:HttpContext){
+        return view.render('influencer-marketing')
+    }
+
+
+
     async contact({view}:HttpContext){
+        return view.render('contact')
+    }
+    async aboutUs({view}:HttpContext){
+        return view.render('about')
+    }
+
+    async blogs({view}:HttpContext){
         return view.render('contact')
     }
 

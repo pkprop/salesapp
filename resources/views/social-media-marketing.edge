@@ -1,0 +1,169 @@
+@layout.app({ title: "Welcome To app" })
+ @slot('main')
+    <div class="content-wrapper">
+	@!component('components/pageHeader',{title:'Social Media Marketing'})
+	
+		<div class="container-fluid">
+		<div class="row medium-padding120">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+						<div class="heading mb30">
+							<h4 class="h1 heading-title">Social Media Marketing Services</h4>
+							<div class="heading-line">
+								<span class="short-line"></span>
+								<span class="long-line"></span>
+							</div>
+							<h5 class="heading-subtitle">
+								We help you to build your brand and connect with your audience through effective social media marketing strategies.
+							</h5>
+						</div>
+
+						<ul class="list list--secondary mb60">
+							<li>
+								<i class="seoicon-check"></i>
+								<a href="javascript:void(0)">Brand Monitoring
+								</a>
+							</li>
+
+							<li>
+								<i class="seoicon-check"></i>
+								<a href="javascript:void(0)">Social Media Management
+								</a>
+							</li>
+
+							<li>
+								<i class="seoicon-check"></i>
+								<a href="javascript:void(0)">Setup & Custom Profile Design
+								</a>
+							</li>
+
+							<li>
+								<i class="seoicon-check"></i>
+								<a href="javascript:void(0)">Social Media Contests
+								</a>
+							</li>
+						</ul>
+
+						<a href="/contact-us" class="btn btn-medium btn--dark btn-hover-shadow mb30">
+							<span class="text">Free SEO Consultation</span>
+							<span class="semicircle"></span>
+						</a>
+					</div>
+
+					<div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
+						<img loading="lazy" src="img/social-photo.png" alt="social">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	@!component('components/home/socialMediaPromotion',{})
+
+		<div class="container-fluid">
+		<div class="row medium-padding120 bg-gray">
+			<div class="container">
+				<div class="row">
+					<div class="seo-results">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<div class="seo-results-thumb">
+
+								<canvas id="myChart" width="360" height="360"></canvas>
+								
+								<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
+								<script type="text/javascript" src="/js/donut-chart.html"></script>
+
+								<div class="points">
+									<div class="points-item">
+										<div class="points-item-count">
+											<span class="point-sircle bg-primary-color"></span>48%
+											<span class="c-gray">
+												- Brand Monitoring
+											</span>
+										</div>
+									</div>
+
+									<div class="points-item">
+										<div class="points-item-count">
+											<span class="point-sircle bg-green-color"></span>23%
+											<span class="c-gray"> 
+													- Social Media Management
+											</span>
+										</div>
+									</div>
+
+									<div class="points-item">
+										<div class="points-item-count">
+											<span class="point-sircle bg-orange-color"></span>17%
+											<span class="c-gray"> 
+												- Setup & Custom Profile Design
+											</span>
+										</div>
+									</div>
+
+									<div class="points-item">
+										<div class="points-item-count">
+											<span class="point-sircle bg-secondary-color"></span>22%
+											<span class="c-gray">
+												- Social Media Contests
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-sm-12 col-xs-12">
+
+							<div class="seo-results-content">
+
+								<div class="heading">
+									<h4 class="h1 heading-title">
+											Why social media marketing is important for your business?
+									</h4>
+									<div class="heading-line">
+										<span class="short-line"></span>
+										<span class="long-line"></span>
+									</div>
+									<p>
+										Social media marketing is essential for businesses to connect with their audience, build brand awareness, and drive traffic to their website. It allows you to engage with your customers, understand their needs, and create a loyal community around your brand. With the right social media strategy, you can increase your online presence, generate leads, and ultimately boost your sales.
+									</p>
+								</div>
+
+								<div class="results">
+									<div class="results-item">
+										<i class="seoicon-hit-target "></i>
+										<div class="results-item-info">
+											0.09% CTR
+										</div>
+									</div>
+									<div class="results-item">
+										<i class=" seoicon-coins"></i>
+										<div class="results-item-info">
+											20% less CPA
+										</div>
+									</div>
+									<div class="results-item">
+										<i class="seoicon-target-search"></i>
+										<div class="results-item-info">
+											272% ROI
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	@!component('components/home/newslatter',{})
+    </div>
+
+ @endslot
+@end

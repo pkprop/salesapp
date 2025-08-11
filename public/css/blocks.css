@@ -555,9 +555,11 @@
   -o-transition: all .3s ease;
   transition: all .3s ease; }
   .info-box--modern:hover {
-    background-color: #2f2c2c; }
+    /* background-color: #2f2c2c;  */
+  }
     .info-box--modern:hover .info-box-content .info-box-title {
-      color: #fff; }
+      /* color: #fff;  */
+    }
     .info-box--modern:hover .info-box-content .read-more {
       color: #942173; }
       .info-box--modern:hover .info-box-content .read-more i {

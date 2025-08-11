@@ -1,7 +1,4 @@
-
-
-		<div class="container">
-
+<div class="container">
 		<div class="recent-post-slider medium-padding120">
 
 			<div class="row">
@@ -28,214 +25,33 @@
 					<div class="swiper-pagination"></div>
 
 					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<article class="hentry post">
+						@each(blog in blogs)
+							<div class="swiper-slide">
+								<article class="hentry post">
 
-								<time class="post__date published " datetime="2016-01-30 12:00:00">
-									January 30, 2016
-								</time>
+									<time class="post__date published " datetime="2016-01-30 12:00:00">
+										{{blog.createdAt.toFormat('dd LLL yyyy')}}
+									</time>
 
-								<div class="post__content">
-									<h2 class="post__title entry-title">
-										<a href="15_blog_details.html">Qemonstraverunt legere lius</a>
-									</h2>
+									<div class="post__content">
+										<h2 class="post__title entry-title">
+											<a href="15_blog_details.html">{{blog.title}}</a>
+										</h2>
 
-									<p class="post__text">Sequitur mutationem consuetudium lectorum quam nunc putamus.</p>
+										<p class="post__text" >{{html.safe(blog.content.slice(0, 100))}}</p>
 
-								</div>
-
-								<div class="post__author author vcard">
-									<div class="post-avatar">
-										<img loading="lazy" src="img/post-author1.png" alt="author">
 									</div>
-									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
-								</div>
 
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="hentry post">
-
-								<time class="post__date published " datetime="2016-01-30 12:00:00">
-									January 30, 2016
-								</time>
-
-								<div class="post__content">
-									<h2 class="post__title entry-title">
-										<a href="15_blog_details.html">Qemonstraverunt legere lius</a>
-									</h2>
-
-									<p class="post__text">Sequitur mutationem consuetudium lectorum quam nunc putamus.</p>
-
-								</div>
-
-								<div class="post__author author vcard">
-									<div class="post-avatar">
-										<img loading="lazy" src="img/post-author2.png" alt="author">
+									<div class="post__author author vcard">
+										<div class="post-avatar">
+											<img loading="lazy" src="img/post-author1.png" alt="author">
+										</div>
+										<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">{{blog.user.full_name||'Property Xpo'}}</a></span>
 									</div>
-									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
-								</div>
 
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="hentry post">
-
-								<time class="post__date published " datetime="2016-01-30 12:00:00">
-									January 30, 2016
-								</time>
-
-								<div class="post__content">
-									<h2 class="post__title entry-title">
-										<a href="15_blog_details.html">Qemonstraverunt legere lius</a>
-									</h2>
-
-									<p class="post__text">Sequitur mutationem consuetudium lectorum quam nunc putamus.</p>
-
-								</div>
-
-								<div class="post__author author vcard">
-									<div class="post-avatar">
-										<img loading="lazy" src="img/post-author3.png" alt="author">
-									</div>
-									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
-								</div>
-
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="hentry post">
-
-								<time class="post__date published " datetime="2016-01-30 12:00:00">
-									January 30, 2016
-								</time>
-
-								<div class="post__content">
-									<h2 class="post__title entry-title">
-										<a href="15_blog_details.html">Qemonstraverunt legere lius</a>
-									</h2>
-
-									<p class="post__text">Sequitur mutationem consuetudium lectorum quam nunc putamus.</p>
-
-								</div>
-
-								<div class="post__author author vcard">
-									<div class="post-avatar">
-										<img loading="lazy" src="img/post-author1.png" alt="author">
-									</div>
-									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
-								</div>
-
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="hentry post">
-
-								<time class="post__date published " datetime="2016-01-30 12:00:00">
-									January 30, 2016
-								</time>
-
-								<div class="post__content">
-									<h2 class="post__title entry-title">
-										<a href="15_blog_details.html">Qemonstraverunt legere lius</a>
-									</h2>
-
-									<p class="post__text">Sequitur mutationem consuetudium lectorum quam nunc putamus.</p>
-
-								</div>
-
-								<div class="post__author author vcard">
-									<div class="post-avatar">
-										<img loading="lazy" src="img/post-author2.png" alt="author">
-									</div>
-									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
-								</div>
-
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="hentry post">
-
-								<time class="post__date published " datetime="2016-01-30 12:00:00">
-									January 30, 2016
-								</time>
-
-								<div class="post__content">
-									<h2 class="post__title entry-title">
-										<a href="15_blog_details.html">Qemonstraverunt legere lius</a>
-									</h2>
-
-									<p class="post__text">Sequitur mutationem consuetudium lectorum quam nunc putamus.</p>
-
-								</div>
-
-								<div class="post__author author vcard">
-									<div class="post-avatar">
-										<img loading="lazy" src="img/post-author3.png" alt="author">
-									</div>
-									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
-								</div>
-
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="hentry post">
-
-								<time class="post__date published " datetime="2016-01-30 12:00:00">
-									January 30, 2016
-								</time>
-
-								<div class="post__content">
-									<h2 class="post__title entry-title">
-										<a href="15_blog_details.html">Qemonstraverunt legere lius</a>
-									</h2>
-
-									<p class="post__text">Sequitur mutationem consuetudium lectorum quam nunc putamus.</p>
-
-								</div>
-
-								<div class="post__author author vcard">
-									<div class="post-avatar">
-										<img loading="lazy" src="img/post-author1.png" alt="author">
-									</div>
-									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
-								</div>
-
-							</article>
-						</div>
-
-						<div class="swiper-slide">
-							<article class="hentry post">
-
-								<time class="post__date published " datetime="2016-01-30 12:00:00">
-									January 30, 2016
-								</time>
-
-								<div class="post__content">
-									<h2 class="post__title entry-title">
-										<a href="15_blog_details.html">Qemonstraverunt legere lius</a>
-									</h2>
-
-									<p class="post__text">Sequitur mutationem consuetudium lectorum quam nunc putamus.</p>
-
-								</div>
-
-								<div class="post__author author vcard">
-									<div class="post-avatar">
-										<img loading="lazy" src="img/post-author2.png" alt="author">
-									</div>
-									<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">Admin</a></span>
-								</div>
-
-							</article>
-						</div>
-
+								</article>
+							</div>
+						@end
 					</div>
 				</div>
 			</div>

@@ -970,8 +970,41 @@ h6, .h6 {
     color: #ffffff !important;
   }
 
+  .text-black{
+    color: #2f2c2c !important;
+  }
+
   .footer-wave{
     position:relative;
     background-color: #426b75;
+  }
+
+  .bg-gray{
+    background-color: #f7f9f9;
+  }
+
+  .features-item__thumb img{
+    margin: auto;
+  }
+  .bg-gray-color{
+    background-color: #f7f9f9;
+  }
+
+  .shadow-box{
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 30px;
+    background-color: #fff;
+  }
+
+  i svg{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    fill: #e1e1e1;
+  }
+  .primary-menu-menu ul.dropdown a:hover > i svg{
+    fill: #942173;;
   }
 /*# sourceMappingURL=maps/base.css.map */
