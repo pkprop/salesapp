@@ -39,9 +39,33 @@ export default class FrontController {
     async ppcManagement({view}:HttpContext){
         return view.render('pay-per-click-management')
     }
-    async influencerMarketing({view}:HttpContext){
-        return view.render('influencer-marketing')
+    // async influencerMarketing({view}:HttpContext){
+    //     return view.render('influencer-marketing')
+    // }
+
+    async websiteDesign({view}:HttpContext){
+
     }
+
+    async websiteDevlopment({view}:HttpContext){
+        
+    }
+
+    async uiUxDesign({view}:HttpContext){
+        
+    }
+
+    async gtmIntigration({view}:HttpContext){
+        
+    }
+
+    async analyticsAudit({view}:HttpContext){
+        
+    }
+
+    
+
+    
 
 
 

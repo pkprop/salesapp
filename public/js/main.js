@@ -533,5 +533,13 @@ var CRUMINA = {};
         })), CRUMINA.animateSvg(), CRUMINA.counters(), CRUMINA.progresBars(), CRUMINA.pieCharts(), e(".subscribe").length && CRUMINA.SubscribeScrollAnnimation(), e(".seo-score").length && CRUMINA.SeoScoreScrollAnnimation(), e(".testimonial-slider").length && CRUMINA.TestimonialScrollAnnimation(), e(".our-vision").length && CRUMINA.OurVisionScrollAnnimation(), e(".background-mountains").length && CRUMINA.MountainsScrollAnnimation()
     })
 
-    
+     if ($(".wow").length) {
+        var wow = new WOW({
+            boxClass: "wow",
+            animateClass: "animated",
+            mobile: true,
+            live: true,
+        });
+        wow.init();
+    }
 }(jQuery);

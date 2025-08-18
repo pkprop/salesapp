@@ -416,16 +416,19 @@
 
 /*================= Styles for sticky-Header =========*/
 .animated {
-  -webkit-animation-duration: .5s;
+  /* -webkit-animation-duration: .5s;
   animation-duration: .5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  will-change: transform,opacity; }
+  will-change: transform,opacity;  */
+}
   @media (max-width: 480px) {
     .animated {
-      -webkit-animation-fill-mode: none;
+      /* -webkit-animation-fill-mode: none;
       animation-fill-mode: none;
-      will-change: unset; } }
+      will-change: unset;  */
+    } 
+  }
 
 @-webkit-keyframes swingInX {
   0% {

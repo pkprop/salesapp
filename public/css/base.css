@@ -1007,4 +1007,16 @@ h6, .h6 {
   .primary-menu-menu ul.dropdown a:hover > i svg{
     fill: #942173;;
   }
+  .mt-up{
+    margin-top: -220px;
+  }
+  .info-box-image img{
+    margin: auto;
+  }
+   .info-box-image-1 img{
+    margin: auto;
+  }
+   .info-box-image svg{
+    margin: auto;
+  }
 /*# sourceMappingURL=maps/base.css.map */
