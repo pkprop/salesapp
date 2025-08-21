@@ -52,7 +52,8 @@ export default class FrontController {
     }
 
     async uiUxDesign({view}:HttpContext){
-        return view.render('ui-ux-design')
+         const blogs = await Blog.query().preload('category').preload('user').where('blog_status', 'published').orderBy('created_at', 'desc').limit(10)
+        return view.render('ui-ux-design',{blogs})
     }
 
     async gtmIntigration({view}:HttpContext){
