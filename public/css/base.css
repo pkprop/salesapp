@@ -980,7 +980,7 @@ h6, .h6 {
   }
 
   .bg-gray{
-    background-color: #f7f9f9;
+    background-color: #f7f9f9 !important;
   }
 
   .features-item__thumb img{
@@ -1019,4 +1019,53 @@ h6, .h6 {
    .info-box-image svg{
     margin: auto;
   }
+
+  .m-a{
+    margin: auto !important;
+  }
+  .center-img{
+    width: 70%;
+    margin: auto;
+  }
+
+  .webpage-develop
+ {
+    position: relative;
+    padding-top: 80px !important;
+}
+  .webpdevelop-move {
+    position: relative;
+}
+.webpdevelop-card {
+    background: url(../images/develop-card-bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 30px;
+    min-height: 350px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .webpdevelop-card {
+        min-height: 370px;
+    }
+}
+.webpdevelop-card:nth-child(1) {
+    top: 40px;
+}
+.webpdevelop-card h4 {
+    color: #fff;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin: 18px 0px 10px;
+}
+.webpdevelop-card p {
+    color: #fff;
+    margin: 0;
+}
+.pin-spacer{
+  background-color: #f7f9f9 !important;
+}
 /*# sourceMappingURL=maps/base.css.map */

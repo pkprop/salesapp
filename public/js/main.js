@@ -543,3 +543,39 @@ var CRUMINA = {};
         wow.init();
     }
 }(jQuery);
+
+
+    gsap.registerPlugin(ScrollTrigger);
+    const cards = document.querySelectorAll(".webpdevelop-card");
+    const header = document.querySelector(".webcard-header");
+    const animation = gsap.timeline();
+
+    cards.forEach((card, index) => {
+        if (index > 0) {
+            // Increment y value of each card by 240px
+            gsap.set(card, {
+                y: index * 380
+            });
+
+            // Animate each card back to 0 (for stacking)
+            animation.to(card, {
+                y: 0,
+                duration: index * 0.5,
+                ease: "none"
+            }, 0);
+        }
+    });
+
+    // Check window width and add ScrollTrigger based on media query
+    if (window.innerWidth >= 992) {
+        ScrollTrigger.create({
+            trigger: ".webpage-develop",
+            start: "top top",
+            pin: true,
+            end: `+=${cards.length * 260 + header.offsetHeight}`,
+            scrub: true,
+            animation: animation,
+            markers: false
+        });
+    } 
+

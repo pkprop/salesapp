@@ -1,0 +1,146 @@
+@layout.app({ title: "Welcome To app" })
+ @slot('main')
+    <div class="content-wrapper">
+        @!component('components/pageHeader',{title:'Website Design'})
+
+        
+	<div class="container">
+		<div class="row pt100">
+
+			<div class="col-lg-12">
+
+				<div class="heading align-center pb80">
+					<h4 class="h1 heading-title">
+                        Time-Tested UI/UX Solutions Crafted for Your Needs
+                    </h4>
+					<div class="heading-line">
+						<span class="short-line"></span>
+						<span class="long-line"></span>
+					</div>
+					<p class="heading-text">
+                        We are a UI/UX design agency dedicated to shaping digital products that strike the perfect balance between user expectations and business objectives. By applying a human-centered approach, we craft intuitive, engaging experiences that drive results. From insights to execution, we deliver solutions that enhance user satisfaction and accelerate business success.
+					</p>
+				</div>
+				<img class="m-a" loading="lazy" src="images/seo-analysis.png" alt="seo-analysis">
+			</div>
+
+		</div>
+	</div>
+
+            <div class="container pt100 pb100">
+                <div class="row mb60">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="info-box--standard">
+                            <div class="info-box-image">
+                                <img loading="lazy" src="images/web-design.png" alt="Responsive Design">
+                            </div>
+                            <div class="info-box-content">
+                                <h4 class="info-box-title text-t-none">Responsive Design</h4>
+                                <p class="text">
+                                    We create websites that look great and work perfectly on all devices, ensuring a seamless user experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="info-box--standard">
+                            <div class="info-box-image">
+                                <img loading="lazy" src="images/web-design2.png" alt="UI/UX Design">
+                            </div>
+                            <div class="info-box-content">
+                                <h4 class="info-box-title text-t-none">UI/UX Design</h4>
+                                <p class="text">
+                                    Our team focuses on intuitive interfaces and engaging user experiences to keep visitors coming back.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb60">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="info-box--standard">
+                            <div class="info-box-image">
+                                <img loading="lazy" src="images/web-design3.png" alt="E-Commerce Solutions">
+                            </div>
+                            <div class="info-box-content">
+                                <h4 class="info-box-title text-t-none">E-Commerce Solutions</h4>
+                                <p class="text">
+                                    We build secure and scalable online stores to help you grow your business and reach more customers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="info-box--standard">
+                            <div class="info-box-image">
+                                <img loading="lazy" src="images/web-design4.png" alt="SEO Optimization">
+                            </div>
+                            <div class="info-box-content">
+                                <h4 class="info-box-title text-t-none">SEO Optimization</h4>
+                                <p class="text">
+                                    Our websites are optimized for search engines to help you rank higher and attract more organic traffic.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt20">
+                        <a href="/contact-us" class="btn btn-medium btn--primary btn-hover-shadow m-a">
+                            <span class="text">Talk to our Experts</span>
+                            <span class="semicircle"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+                <div class="container-fluid pt100 pb100 bg-gray">
+                    <div class="container">
+                            <div class="row mb60">
+                        <div class="col-lg-12">
+                            <div class="heading">
+                                <h4 class="h1 heading-title">Discover How Efficient UI/UX Services Elevate Your Product</h4>
+                                <div class="heading-line">
+                                    <span class="short-line"></span>
+                                    <span class="long-line"></span>
+                                </div>
+                                <p class="heading-text c-dark">
+                                    Our expert UI/UX team crafts seamless and engaging experiences that delight users and drive business growth. From research and wireframing to prototyping and testing, we ensure your product stands out in usability and design.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb60">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="info-box--standard">
+                                <img class="center-img" loading="lazy" src="images/web-design5.png" alt="UI/UX Services">
+                                <div class="info-box-content heading text-center">
+                                    <h4 class="heading-text">User Research & Analysis</h4>
+                                    <p class="text">
+                                        We analyze user needs and behaviors to inform design decisions, ensuring your product meets real-world expectations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="info-box--standard">
+                                <img class="center-img" loading="lazy" src="images/web-design6.png" alt="Prototyping & Testing">
+                                <div class="info-box-content text-center heading">
+                                    <h4 class="heading-text">Prototyping & Usability Testing</h4>
+                                    <p class="text">
+                                        We create interactive prototypes and conduct usability tests to refine your product for optimal user satisfaction.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+
+            @!component('components/home/newslatter',{})
+            
+    </div>
+ @endslot
+@end

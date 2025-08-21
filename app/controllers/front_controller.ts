@@ -44,26 +44,26 @@ export default class FrontController {
     // }
 
     async websiteDesign({view}:HttpContext){
-
+        return view.render('website-design')
     }
 
     async websiteDevlopment({view}:HttpContext){
-        
+        return view.render('wedsite-development')
     }
 
     async uiUxDesign({view}:HttpContext){
-        
+        return view.render('ui-ux-design')
     }
 
     async gtmIntigration({view}:HttpContext){
-        
+        return view.render('gtm-intigration')
     }
 
     async analyticsAudit({view}:HttpContext){
-        
+        return view.render('analytics-audit')
     }
 
-    
+
 
     
 
