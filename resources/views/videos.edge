@@ -1,0 +1,108 @@
+@layout.app({ title: "Welcome To app" })
+@slot('meta')
+	<title inertia>{{page?.meta_title||'Welcome to SalesApp'}}</title>
+	<meta name="keywords" content="{{page?.meta_keywords}}">
+	<meta name="description" content="{{page?.meta_description}}">
+@endslot
+ @slot('main')
+    <div class="content-wrapper">
+	@!component('components/pageHeader',{title:'Videos & Creatives'})
+	<section>
+		<div class="container">
+		<div class="row pt-20 ">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+				<div class="heading align-center mb60">
+					<h4 class="h1 heading-title">Transforming Big Ideas into Reality. Driving Growth with Captivating Motion Graphics and Videos.</h4>
+					<div class="heading-line">
+						<span class="short-line"></span>
+						<span class="long-line"></span>
+					</div>
+
+					<p class="heading-text">
+						We specialize in bringing bold ideas to life through dynamic motion graphics and impactful videos that capture attention, tell compelling stories, and inspire action. Our creative solutions not only elevate your brand’s visual identity but also drive measurable growth by engaging audiences in meaningful ways.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="video">
+			<video autoplay muted loop src="images/video-1.mp4"></video>
+		</div>
+	</section>
+	@!component('components/home/homeCounter',{})
+	
+	<section class="bg-gray pt-20 pb-20 bg-outline">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading ">
+						<h4 class="h1 heading-title">Capturing Stories: Professional Photoshoots, Videos, Animations & Reels.</h4>
+						<div class="heading-line">
+							<span class="short-line"></span>
+							<span class="long-line"></span>
+						</div>
+
+					</div>
+					<p>
+						✨ We specialize in turning moments into timeless stories through high-quality photoshoots, engaging videos, creative animations, and impactful reels. Our goal is to craft visuals that not only capture attention but also connect with your audience on a deeper level, helping your brand stand out with compelling storytelling.
+					</p>
+					<h5 class="h4 heading-text pt-20 text-center">
+						Videos That Convert Viewers into Loyal Customers
+					</h5>
+					<p class="text-center">
+						Engage Viewers, Convert Them into Loyal Customers
+					</p>
+
+
+				</div>
+			</div>
+			<div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="video-audience-box">
+                    <img src="images/video-audience-1.png" alt="icon">
+                    <p class="h4">Personalized Video Strategy</p>
+                    <p>We get to know your audience and understand your goals to create videos that align with your needs.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="video-audience-box video-audi">
+                    <img src="images/video-audience-2.png" alt="icon">
+                    <p class="h4">Consistent Brand Storytelling</p>
+                    <p>We work closely with you on scripts and storyboards to ensure consistent storytelling of your brand’s values.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="video-audience-box">
+                    <img src="images/video-audience-3.png" alt="icon">
+                    <p class="h4">Rapid Turnaround Times</p>
+                    <p>We built our process to ensure rapid video creation, editing, and delivery to meet tight deadlines.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="video-audience-box video-audi">
+                    <img src="images/video-audience-4.png" alt="icon">
+                    <p class="h4">Masterful Finishing Touches</p>
+                    <p>Once we have your footage, the magic begins as we add the polishing finishing touches with music, graphics, etc.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="video-audience-box">
+                    <img src="https://cdn.88gravity.com/website/img/video-audience-5.png" alt="icon">
+                    <p class="h4">Video Marketing Expertise</p>
+                    <p>Beyond production, we also offer marketing expertise to help you maximize your reach and impact.</p>
+                </div>
+            </div>
+        </div>
+		</div>
+		
+	</section>
+
+		@!component('components/home/newslatter',{})
+    </div>
+
+ @endslot
+@end

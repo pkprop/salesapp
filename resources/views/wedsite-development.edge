@@ -1,4 +1,9 @@
 @layout.app({ title: "Welcome To app" })
+@slot('meta')
+	<title inertia>{{page?.meta_title||'Welcome to SalesApp'}}</title>
+	<meta name="keywords" content="{{page?.meta_keywords}}">
+	<meta name="description" content="{{page?.meta_description}}">
+@endslot
  @slot('main')
     <div class="content-wrapper">
         @!component('components/pageHeader',{title:'Website Development'})

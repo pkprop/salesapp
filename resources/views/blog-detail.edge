@@ -1,0 +1,143 @@
+@layout.app()
+
+@slot('meta')
+	<title inertia>{{blog?.meta_title||'Welcome to SalesApp'}}</title>
+	<meta name="keywords" content="{{blog?.meta_keywords}}">
+	<meta name="description" content="{{blog?.meta_description}}">
+@endslot
+ @slot('main')
+    <div class="content-wrapper">
+	@!component('components/pageHeader',{title:blog?.title||''})
+     <div class="container">
+        <div class="row medium-padding120">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"> 
+                <main class="main">
+                        <article class="hentry post post-standard-details">
+                            <div class="post-thumb">
+                                <img loading="lazy" src="{{blog?.image}}" alt="{{blog?.title}}">
+                            </div>
+
+                            <div class="post__content">
+
+                                <h2 class="h2 post__title entry-title ">
+                                    {{blog?.title}}
+                                </h2>
+
+
+                                <div class="post-additional-info">
+
+                                    <div class="post__author author vcard">
+                                        <img loading="lazy" src="/img/avatar-b-details.png" alt="author">
+                                        Posted by
+
+                                        <div class="post__author-name fn">
+                                            <a href="#" class="post__author-link">{{blog?.user?.fullName}}</a>
+                                        </div>
+
+                                    </div>
+
+                                    <span class="post__date">
+
+                                    <i class="seoicon-clock"></i>
+
+                                    <time class="published" datetime="2016-03-20 12:00:00">
+                                       {{blog.createdAt.toFormat('dd LLL yyyy')}}
+                                    </time>
+
+                                </span>
+
+                                    <span class="category">
+                                    <i class="seoicon-tags"></i>
+                                        <a href="#">{{{blog?.category?.name}}}</a>
+                                    
+                                    </span>
+
+                                    {{-- <span class="post__comments">
+                                    <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
+                                    6
+                                </span> --}}
+
+                                </div>
+
+                                <div class="post__content-info">
+                                    <p class="post__text">
+                                        {{html.safe(blog?.content)}}
+                                    </p>
+                                </div>
+                            </div>
+
+                            {{-- <div class="socials">Share:
+                                <a href="#" class="social__item">
+                                    <i class="seoicon-social-facebook"></i>
+                                </a>
+                                <a href="#" class="social__item">
+                                    <i class="seoicon-social-twitter"></i>
+                                </a>
+                                <a href="#" class="social__item">
+                                    <i class="seoicon-social-linkedin"></i>
+                                </a>
+                                <a href="#" class="social__item">
+                                    <i class="seoicon-social-google-plus"></i>
+                                </a>
+                                <a href="#" class="social__item">
+                                    <i class="seoicon-social-pinterest"></i>
+                                </a>
+                            </div> --}}
+
+                        </article>
+
+                        {{-- <div class="blog-details-author">
+
+                            <div class="blog-details-author-thumb">
+                                <img loading="lazy" src="img/blog-details-author.png" alt="Author">
+                            </div>
+
+                            <div class="blog-details-author-content">
+                                <div class="author-info">
+                                    <h5 class="author-name">Philip Demarco</h5>
+                                    <p class="author-info">SEO Specialist</p>
+                                </div>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    nonummy nibh euismod.
+                                </p>
+
+                                {{-- <div class="socials">
+
+                                    <a href="#" class="social__item">
+                                        <img loading="lazy" src="svg/circle-facebook.svg" alt="facebook">
+                                    </a>
+
+                                    <a href="#" class="social__item">
+                                        <img loading="lazy" src="svg/twitter.svg" alt="twitter">
+                                    </a>
+
+                                    <a href="#" class="social__item">
+                                        <img loading="lazy" src="svg/google.svg" alt="google">
+                                    </a>
+
+                                    <a href="#" class="social__item">
+                                        <img loading="lazy" src="svg/youtube.svg" alt="youtube">
+                                    </a>
+
+                                </div> --}}
+                            </div>
+                        </div> --}}
+
+                </main>
+            </div>
+            <div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-12 col-xs-12">
+                @!component('components/blog/sidebar',{categories})
+            </div>
+        </div>
+        
+     </div>
+	
+
+
+
+        
+	@!component('components/home/newslatter',{})
+    </div>
+
+ @endslot
+@end

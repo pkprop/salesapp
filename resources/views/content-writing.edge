@@ -1,0 +1,163 @@
+@layout.app({ title: "Welcome To app" })
+@slot('meta')
+	<title inertia>{{page?.meta_title||'Welcome to SalesApp'}}</title>
+	<meta name="keywords" content="{{page?.meta_keywords}}">
+	<meta name="description" content="{{page?.meta_description}}">
+@endslot
+ @slot('main')
+    <div class="content-wrapper">
+	@!component('components/pageHeader',{title:'Content Writing'})
+      <section class="">
+			<div class="container">
+				<div class="row mt-20 mb-20">
+					<div class="col-lg-6">
+						<div class="heading">
+							<h4 class="h1 heading-title">We bring your ideas to life through powerful words.</h4>
+							<div class="heading-line">
+								<span class="short-line"></span>
+								<span class="long-line"></span>
+							</div>
+						</div>
+						<p>
+							Our team transforms your vision into meaningful, impactful content that resonates with your audience. By blending creativity with strategy, we craft messages that inspire action, build connections, and give your brand a strong, authentic voice.
+						</p>
+					</div>
+					<div class="col-lg-6" data-image-animation="reveal" data-image-animation-direction="right">
+						<div class="copyhead-cardrow">
+                    <div class="copy-cardbox">
+                        <div>
+                            <span class="cardtag cardtag-1">Investing</span>
+                            <p>Inside the SEC’s Push to End Payment for Order Flow: What Are the Alternatives?</p> 
+                        </div>
+
+                        <div>
+                            <span class="cardtag cardtag-2">Crypto</span>
+                            <p>How do I spend my Bitcoin? (and where?)</p> 
+                        </div>
+
+                        <div>
+                            <span class="cardtag cardtag-3">Lifestyle</span>
+                            <p>Evaluating Major Lifestyle Shifts Triggered by Nationwide Lockdowns</p> 
+                        </div>
+                    </div>
+
+                    <div class="copy-cardbox">
+                        <div>
+                            <span class="cardtag cardtag-4">Fintech</span>
+                            <p>Robinhood Sets Its Sights on a Financial Revolution — The IPO Is Just the Start</p> 
+                        </div>
+
+                        <div>
+                            <span class="cardtag cardtag-5">Health</span>
+                            <p>Uncovering the Psychological Shifts Triggered by Nationwide Lockdowns</p> 
+                        </div>
+
+                        <div>
+                            <span class="cardtag cardtag-6">Marketing</span>
+                            <p>Optimizing Your Funnels to Maximize Lead Generation</p> 
+                        </div>
+                    </div>
+                </div>
+					</div>
+				</div>
+			</div>
+	  </section>
+        
+		<section class="container-fluid wave-bg">
+			<div class="container">
+				<div class="row mb-2- mt-20">
+					<div class="col-lg-6">
+						<h5 class="heading-text">We Start with a Clear Strategy</h5>
+						<div class="heading">
+							<h4 class="h1 heading-title">Our content writing services play a key role in driving your brand’s digital growth and long-term success.</h4>
+							<div class="heading-line">
+								<span class="short-line"></span>
+								<span class="long-line"></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<p>
+							Our content writing services play a key role in driving your brand’s digital growth and long-term success. By crafting compelling, <b>SEO-optimized</b>, and <b>audience-focused content</b>, we ensure your brand not only ranks higher in search engines but also builds lasting trust with customers. From blogs and articles to web copy and marketing materials, our words are designed to inform, engage, and convert. With the right mix of <b>creativity and strategy</b>, we position your brand as an authority in its niche, paving the way for measurable business growth and stronger digital presence.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	     <section class="bg-gray">
+			<div class="container">
+				<div class="row mt-20 mb-20">
+					<div class="col-lg-6" data-image-animation="reveal" data-image-animation-direction="left">
+						<div class="row">
+							<div class="col-lg-6 mb-10">
+								<h5 class="heading-text">High-Quality Content</h5>
+								<p>
+									Content that is clear, engaging, and tailored to deliver maximum impact for your audience.
+								</p>
+							</div>
+							<div class="col-lg-6 mb-10">
+								<h5 class=" heading-text">Diverse Genre Expertise</h5>
+								<p>
+									Skilled in crafting content across multiple industries and niches to meet your unique needs.
+								</p>
+							</div>
+							<div class="col-lg-6 mb-10">
+								<h5 class=" heading-text">Customized Solutions</h5>
+								<p>
+									Tailored content strategies designed to align perfectly with your brand’s goals and audience.
+								</p>
+							</div>
+							<div class="col-lg-6 mb-10">
+								<h5 class=" heading-text">SEO Optimization</h5>
+								<p>
+									Content crafted with smart SEO strategies to boost visibility, improve rankings, and drive organic traffic.
+								</p>
+							</div>
+							<div class="col-lg-6 mb-10">
+								<h5 class=" heading-text">Quick Turnaround</h5>
+								<p>
+									Content crafted with smart SEO strategies to boost visibility, improve rankings, and drive organic traffic.
+								</p>
+							</div>
+							<div class="col-lg-6 mb-10">
+								<h5 class=" heading-text">Competitive Pricing</h5>
+								<p>
+									Get premium-quality content at affordable rates, ensuring maximum value without compromising on excellence.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="heading">
+							<h4 class="h1 heading-title">6 Compelling Reasons to Partner With Us for Content Writing</h4>
+							<div class="heading-line">
+								<span class="short-line"></span>
+								<span class="long-line"></span>
+							</div>
+						</div>
+						<p class="mb-10">
+							Discover why businesses trust us to craft impactful content. From strategy to execution, we blend creativity, precision, and industry expertise to deliver words that resonate with your audience and drive results. Here are six compelling reasons to choose us as your content writing partner.
+						</p>
+
+						<a href="/services" class="btn btn-medium btn-border c-primary">
+							<span class="text">Learn More</span>
+							<span class="semicircle"></span>
+						</a>
+						<a href="/contact-us" class="btn btn-medium btn--primary btn-hover-shadow">
+							<span class="text">Get a Quote</span>
+							<span class="semicircle"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+	  </section>
+
+
+
+
+	@!component('components/home/newslatter',{})
+    </div>
+
+ @endslot
+@end

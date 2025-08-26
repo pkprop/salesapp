@@ -2,7 +2,6 @@ import type { HttpContext } from '@adonisjs/core/http'
 import drive from '@adonisjs/drive/services/main'
 import { cuid } from '@adonisjs/core/helpers'
 import CmsPage from '#models/cms_page'
-import AIService from '#services/ai_services'
 export default class CmsController {
 
     async list({inertia,request}: HttpContext){
@@ -84,17 +83,6 @@ export default class CmsController {
             return response.json({message:'Status changed'})
         } catch (error) {
             return response.status(500).json({ message:error.message })
-        }
-    }
-
-    async aiMeta({ response,params }: HttpContext){
-        try {
-            const {id,text}=params
-            const product = await CmsPage.query().where('id',id).first()
-            const meta = await AIService.pageMeta(product?.title||text)
-            return {status:'success',data:JSON.parse(meta?.data||'')}
-        } catch (error) {
-            return response.status(500).json({status:'error', message:error.message })
         }
     }
 

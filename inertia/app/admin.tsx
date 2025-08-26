@@ -11,7 +11,7 @@ import { hydrateRoot } from 'react-dom/client'
 import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from '@adonisjs/inertia/helpers'
 
-const appName = 'Porperty Xpo Admin'
+const appName = 'Salesapp Admin'
 
 createInertiaApp({
   progress: {color: '#f29620'},

@@ -880,8 +880,8 @@
   .post-standard .post-thumb {
     position: relative;
     margin-bottom: 60px;
-    -webkit-box-shadow: 24px 50px 60px rgba(0, 0, 0, 0.3);
-    box-shadow: 24px 50px 60px rgba(0, 0, 0, 0.3);
+    /* -webkit-box-shadow: 24px 50px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 24px 50px 60px rgba(0, 0, 0, 0.3); */
     text-align: center; }
     @media (max-width: 480px) {
       .post-standard .post-thumb {
@@ -1194,8 +1194,8 @@
 .post-standard-details {
   margin-bottom: 80px; }
   .post-standard-details .post-thumb {
-    -webkit-box-shadow: 24px 50px 60px rgba(0, 0, 0, 0.3);
-    box-shadow: 24px 50px 60px rgba(0, 0, 0, 0.3);
+    /* -webkit-box-shadow: 24px 50px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 24px 50px 60px rgba(0, 0, 0, 0.3); */
     margin-bottom: 60px;
     float: left; }
   .post-standard-details .post__content {

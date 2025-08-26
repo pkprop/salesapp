@@ -5,7 +5,7 @@ import { cuid } from '@adonisjs/core/helpers'
 import sharp from 'sharp'
 import BlogCategory from '#models/blog_category'
 import Blog from '#models/blog'
-import AIService from '#services/ai_services'
+// import AIService from '#services/ai_services'
 import env from '#start/env'
 export default class BlogController {
 
@@ -224,17 +224,6 @@ export default class BlogController {
             return response.json({message:'Status changed'})
         } catch (error) {
             return response.status(500).json({ message:error.message })
-        }
-    }
-
-     async aiMeta({ response,params }: HttpContext){
-        try {
-            const {id,text}=params
-            const product = await Blog.query().where('id',id).first()
-            const meta = await AIService.pageMeta(product?.title||text)
-            return {status:'success',data:JSON.parse(meta?.data||'')}
-        } catch (error) {
-            return response.status(500).json({status:'error', message:error.message })
         }
     }
 

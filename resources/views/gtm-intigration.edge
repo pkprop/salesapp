@@ -1,4 +1,9 @@
 @layout.app({ title: "Welcome To app" })
+@slot('meta')
+	<title inertia>{{page?.meta_title||'Welcome to SalesApp'}}</title>
+	<meta name="keywords" content="{{page?.meta_keywords}}">
+	<meta name="description" content="{{page?.meta_description}}">
+@endslot
  @slot('main')
     <div class="content-wrapper">
         @!component('components/pageHeader',{title:'Gtm Intigration'})
@@ -51,14 +56,13 @@
 
                     </div>
                 </div>
-
             </section>
-        
+
             <section class="">
                 <div class="container">
                     <div class="row mt-20 mb-20">
                         <div class="col-lg-6">
-                            <h5 class="mb-10">Supercharge Your Website Performance with GTM</h5>
+                            <h5 class="mb-10 heading-text">Supercharge Your Website Performance with GTM</h5>
                             <div class="heading">
                                <h4 class="h1 heading-title">Reasons to Use Google Tag Manager on Your Website</h4>
                                 <div class="heading-line">
@@ -75,12 +79,11 @@
                             </p>
                         </div>
                         <div class="col-lg-6">
-
+                            <img src="images/gmt-image.png" />
                         </div>
                     </div>
                 </div>
             </section>
-        
         @!component('components/home/newslatter',{})
     </div>
  @endslot

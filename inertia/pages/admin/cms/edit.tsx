@@ -65,20 +65,6 @@ function EditPage(){
       setValue('content',e.target.value);
       console.log(e.target.value);
   }
-  const aiMeta = ()=>{
-    setBtnMetaLoading(true);
-    fetch('/admin/page/ai-meta/'+page?.id).then((res)=>res.json()).then((data)=>{
-       // console.log(data)
-        if(data?.status=="success"){
-            setValue('meta_title',data?.data?.title);
-            setValue('meta_keywords',data?.data?.keywords);
-            setValue('meta_description',data?.data?.description);
-        }
-        setBtnMetaLoading(false);
-    }).finally(()=>{
-        setBtnMetaLoading(false);
-    })
-}
     useEffect(() => {
       if(page?.content){
         //setValue('content',page?.content);
@@ -206,11 +192,6 @@ function EditPage(){
                                           {btnLoading?<Loader />:'Save'}
                                         </LoadingButton>
                                     </div>
-                                    <div className="col-sm-6 form-label-title">
-                                      <button className="flex items-center focus:outline-none btn btn-animation w-30 btn-info" type="button" disabled={btnMetaLoading} onClick={aiMeta}>
-                                          {btnMetaLoading?<Loader />:<>Generate Meta <i className="fa fa-robot ml-1"></i></>}
-                                      </button>
-                                  </div>
                                   </div>
 
                               </form>

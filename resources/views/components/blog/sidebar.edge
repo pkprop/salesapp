@@ -1,0 +1,67 @@
+<aside aria-label="sidebar" class="sidebar sidebar-right">
+					{{-- <div class="widget">
+						<form class="w-search">
+							<input class="search input-standard-grey" required="required" placeholder="Search" type="search">
+							<button class="icon">
+								<i class="seoicon-loupe"></i>
+							</button>
+						</form>
+					</div> --}}
+
+					<div class="widget w-post-category">
+						<div class="heading">
+							<h4 class="heading-title">Post Category</h4>
+							<div class="heading-line">
+								<span class="short-line"></span>
+								<span class="long-line"></span>
+							</div>
+						</div>
+						<div class="post-category-wrap">
+							@each(cat in categories)
+							<div class="category-post-item">
+								<span class="post-count">{{cat.$extras?.blogs_count}}</span>
+								<a href="#" class="category-title">{{cat?.name}}
+									<i class="seoicon-right-arrow"></i>
+								</a>
+							</div>
+							@end
+						</div>
+					</div>
+
+
+					<div class="widget w-request bg-boxed-red">
+						<div class="w-request-content">
+							<img class="m-a" loading="lazy" src="/img/request.png" alt="request">
+							<h4 class="w-request-content-title">Request a Free Quote</h4>
+							<p class="w-request-content-text">
+                                SalesApp is a team of creative thinkers, digital strategists, designers, and marketing technologists who are passionate about helping businesses scale. From startups to established brands, we partner with clients to turn marketing challenges into success stories.
+							</p>
+
+							<a href="/contact-us" class="btn btn-small btn--dark btn-hover-shadow">
+								<span class="text">Contact Now</span>
+							</a>
+						</div>
+					</div>
+					{{-- <div class="widget w-tags">
+						<div class="heading">
+							<h4 class="heading-title">Popular Tags</h4>
+							<div class="heading-line">
+								<span class="short-line"></span>
+								<span class="long-line"></span>
+							</div>
+						</div>
+
+						<div class="tags-wrap">
+							<a href="#" class="w-tags-item">SEO</a>
+							<a href="#" class="w-tags-item">Advertising</a>
+							<a href="#" class="w-tags-item">Business</a>
+							<a href="#" class="w-tags-item">Optimization</a>
+							<a href="#" class="w-tags-item">Digital Marketing</a>
+							<a href="#" class="w-tags-item">Social</a>
+							<a href="#" class="w-tags-item">Keyword</a>
+							<a href="#" class="w-tags-item">Strategy</a>
+							<a href="#" class="w-tags-item">Audience</a>
+						</div>
+					</div> --}}
+				</aside>
+			

@@ -1,0 +1,99 @@
+@layout.app({ title: "Welcome To app" })
+@slot('meta')
+	<title inertia>{{page?.meta_title||'Welcome to SalesApp'}}</title>
+	<meta name="keywords" content="{{page?.meta_keywords}}">
+	<meta name="description" content="{{page?.meta_description}}">
+@endslot
+ @slot('main')
+    <div class="content-wrapper">
+	@!component('components/pageHeader',{title:'Blogs'})
+
+	<div class="container">
+		<div class="row medium-padding120">
+			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<main class="main">
+					@each(blog in blogs)
+						
+					<article class="hentry post post-standard has-post-thumbnail">
+						<div class="post-thumb">
+							<img loading="lazy" src="{{blog?.image}}" alt="{{blog?.title}}">
+							{{-- <div class="overlay"></div> --}}
+							{{-- <a href="{{blog?.image}}" class="link-image js-zoom-image">
+								<i class="seoicon-zoom"></i>
+							</a> --}}
+							{{-- <a href="#" class="link-post">
+								<i class="seoicon-link-bold"></i>
+							</a> --}}
+						</div>
+
+						<div class="post__content">
+
+							<div class="post__author author vcard">
+								<img loading="lazy" src="/img/avatar6.png" alt="author">
+								Posted by
+
+								<div class="post__author-name fn">
+									<a href="#" class="post__author-link">{{blog?.user?.fullName}}</a>
+								</div>
+
+							</div>
+
+							<div class="post__content-info">
+
+								<h2 class="post__title entry-title ">
+									<a href="/blog/{{blog?.slug}}">{{blog?.title}}</a>
+								</h2>
+
+								<div class="post-additional-info">
+
+									<span class="post__date">
+
+										<i class="seoicon-clock"></i>
+
+										<time class="published" datetime="2016-03-20 12:00:00">
+											{{blog.createdAt.toFormat('dd LLL yyyy')}}
+										</time>
+
+									</span>
+
+									<span class="category">
+										<i class="seoicon-tags"></i>
+										<a href="#">{{{blog?.category?.name}}}</a>
+										
+									</span>
+
+									{{-- <span class="post__comments">
+										<a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a>
+										6
+									</span> --}}
+
+								</div>
+
+								<p class="post__text">{{html.safe(blog?.content.slice(0, 500))}} ...
+								</p>
+
+								<a href="/blog/{{blog?.slug}}" class="btn btn-small btn--dark btn-hover-shadow mt-10">
+									<span class="text">Continue Reading</span>
+									<i class="seoicon-right-arrow"></i>
+								</a>
+							</div>
+						</div>
+					</article>
+					@end
+				</main>
+			</div>
+
+			<div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-12 col-xs-12">
+					@!component('components/blog/sidebar',{categories})
+			</div>
+		</div>
+	</div>
+
+
+
+        
+	@!component('components/home/newslatter',{})
+    </div>
+
+ @endslot
+@end

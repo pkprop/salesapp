@@ -93,6 +93,25 @@ const AdminNavBar = ({mobileToggle,setMobileToggle}:any) => {
                                         </li>
                                     </ul>
                                 </li>
+
+                                <li className="sidebar-list" onClick={()=>toggleVisibility('inquiries')}>
+                                    <Link className={`sidebar-link sidebar-title link-nav ${menuIndex=='inquiries' ? 'active' : ''}`} href="/admin/inquiries">
+                                        <i className="ri-pages-line"></i>
+                                        <span>Inquiries</span>
+                                        {/* <div className="according-menu">
+                                            <i className={`${menuIndex=='inquiries' ? 'ri-arrow-down-s-line' : 'ri-arrow-right-s-line'}`}></i>
+                                        </div> */}
+                                    </Link>
+                                </li>
+                                <li className="sidebar-list" onClick={()=>toggleVisibility('newslatters')}>
+                                    <Link className={`sidebar-link sidebar-title link-nav ${menuIndex=='newslatters' ? 'active' : ''}`} href="/admin/newslatters">
+                                        <i className="ri-pages-line"></i>
+                                        <span>Newslatters</span>
+                                        {/* <div className="according-menu">
+                                            <i className={`${menuIndex=='newslatters' ? 'ri-arrow-down-s-line' : 'ri-arrow-right-s-line'}`}></i>
+                                        </div> */}
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
 

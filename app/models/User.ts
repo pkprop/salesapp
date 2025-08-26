@@ -14,7 +14,7 @@ export default class User extends compose(BaseModel, AuthFinder) {
   @column({ isPrimary: true })
   declare id: number
 
-  @column({ serializeAs:'full_name' })
+  @column({ serializeAs:'full_name'})
   declare fullName: string | null
 
   @column()

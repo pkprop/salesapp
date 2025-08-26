@@ -5,16 +5,7 @@ export default function Pagination({meta,baseUrl}:any) {
   const {filters} = usePage<any>()?.props|| [];
   const params = new URLSearchParams();
   const pageUrl =(page:number)=>{
-    if(filters?.status!='' && filters?.status!=undefined){
-      params.set('status', filters?.status||"");
-    }else{
-      params.delete('status');
-    }
-    if(filters?.category_id!='' && filters?.category_id!=undefined ){
-      params.set('category_id', filters?.category_id||"");
-    }else{
-      params.delete('category_id');
-    }
+    
     if(page){
       params.set('page', page.toString());
     }
@@ -28,17 +19,8 @@ export default function Pagination({meta,baseUrl}:any) {
     if (typeof window === 'undefined') return url;
     const urlObj = new URL(url, window.location.origin);
     const params = new URLSearchParams(urlObj.search);
-    if(filters?.status!='' && filters?.status!=undefined){
-      params.set('status', filters?.status||"");
-    }else{
-      params.delete('status');
-    }
-    if(filters?.category_id!='' && filters?.category_id!=undefined ){
-      params.set('category_id', filters?.category_id||"");
-    }else{
-      params.delete('category_id');
-    }
-    return urlObj.pathname+'?'+params.toString();
+    
+    return baseUrl+'?'+params.toString();
   }
 
   if (meta?.lastPage === 1) return null;

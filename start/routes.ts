@@ -14,6 +14,8 @@ const AuthController = ()=> import('#controllers/admin/auth_controller')
 const DashboardController =()=> import('#controllers/admin/dashboard_controller')
 const CmsController = ()=> import( '#controllers/admin/cms_controller')
 const BlogController = ()=> import( '#controllers/admin/blog_controller')
+const InquiryController = ()=> import( '#controllers/admin/inquiry_controller')
+const NewslatterController = ()=> import( '#controllers/admin/newslatter_controller')
 
 router.get('/csrf-token', async ({ response, request }) => {
     return response.json({ csrfToken: request.csrfToken})
@@ -35,9 +37,9 @@ router.get('/gtm-integration',[FrontController,'gtmIntigration'])
 router.get('/analytics-audit',[FrontController,'analyticsAudit'])
 // router.get('/cro',[FrontController,'emailMarketing'])
 
-router.get('/content-writing',[FrontController,'emailMarketing'])
-router.get('/graphic-design',[FrontController,'emailMarketing'])
-router.get('/videos',[FrontController,'emailMarketing'])
+router.get('/content-writing',[FrontController,'contentWriting'])
+// router.get('/graphic-design',[FrontController,'emailMarketing'])
+router.get('/videos',[FrontController,'videosMarketing'])
 
 
 router.get('/contact-us',[FrontController,'contact'])
@@ -46,8 +48,9 @@ router.post('/save-newslatter',[FrontController,'saveNewslatter'])
 
 router.get('/about-us',[FrontController,'aboutUs'])
 router.get('/blogs',[FrontController,'blogs'])
-router.get('/terms-conditions',[FrontController,'contact'])
-router.get('/privacy-policy',[FrontController,'contact'])
+router.get('/blog/:slug',[FrontController,'blogDeatil'])
+router.get('/terms-conditions',[FrontController,'termsConditions'])
+router.get('/privacy-policy',[FrontController,'privacyPolicy'])
 
 
 //save-contact
@@ -76,9 +79,7 @@ router.group(() => {
         router.get('/page/edit/:id',[CmsController,'edit'])
         router.post('/page/update/:id',[CmsController,'update'])
         router.get('/page/change-status/:id', [CmsController, 'changeStatus'])
-        router.get('/page/ai-meta/:id?',[CmsController,'aiMeta'])
-
-         router.get('/blog/categories',[BlogController,'listCategory'])
+        router.get('/blog/categories',[BlogController,'listCategory'])
         router.get('/blog/category/add',[BlogController,'addCategory'])
         router.get('/blog/category/edit/:id',[BlogController,'editCategory'])
         router.post('/blog/category/save',[BlogController,'saveCategory'])
@@ -91,7 +92,9 @@ router.group(() => {
         router.get('/blog/change-status/:id', [BlogController, 'changeStatus'])
         router.get('/blog/edit/:id',[BlogController,'edit'])
         router.post('/blog/update/:id',[BlogController,'update'])
-        router.get('/blog/ai-meta/:id?',[BlogController,'aiMeta'])
+
+       router.get('/inquiries',[InquiryController,'list'])
+       router.get('/newslatters',[NewslatterController,'list'])
 
      }).middleware(middleware.auth())
 

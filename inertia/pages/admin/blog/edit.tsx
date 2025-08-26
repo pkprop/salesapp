@@ -70,20 +70,7 @@ function EditPage(){
     function handleSelectChange(e: any) {
       setValue('category_id',e.target.value);
     }
-    const aiMeta = ()=>{
-    setBtnMetaLoading(true);
-    fetch('/admin/blog/ai-meta/'+blog?.id).then((res)=>res.json()).then((data)=>{
-       // console.log(data)
-        if(data?.status=="success"){
-            setValue('meta_title',data?.data?.title);
-            setValue('meta_keywords',data?.data?.keywords);
-            setValue('meta_description',data?.data?.description);
-        }
-        setBtnMetaLoading(false);
-    }).finally(()=>{
-        setBtnMetaLoading(false);
-    })
-  }
+   
     useEffect(() => {
 
       console.log(blog,'blog');
@@ -222,7 +209,6 @@ function EditPage(){
                              
 
                                 {invalidError && <div className="mb-4 row align-items-center"><p style={{ color: "red" }}>{invalidError}</p> </div>}
-
                                   <div className="mb-4 row align-items-center">
                                     <div className="col-sm-3 form-label-title">
                                         <LoadingButton
@@ -233,13 +219,7 @@ function EditPage(){
                                           {btnLoading?<Loader />:'Save'}
                                         </LoadingButton>
                                     </div>
-                                    <div className="col-sm-6 form-label-title">
-                                        <button className="flex items-center focus:outline-none btn btn-animation w-30 btn-info" type="button" disabled={btnMetaLoading} onClick={aiMeta}>
-                                            {btnMetaLoading?<Loader />:<>Generate Meta <i className="fa fa-robot ml-1"></i></>}
-                                        </button>
-                                    </div>
                                   </div>
-
                               </form>
                           </div>
                       </div>

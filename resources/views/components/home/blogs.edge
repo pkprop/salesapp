@@ -36,7 +36,7 @@
 
 									<div class="post__content">
 										<h2 class="post__title entry-title">
-											<a href="15_blog_details.html">{{blog.title}}</a>
+											<a href="blog/{{blog?.slug}}">{{blog?.title}}</a>
 										</h2>
 
 										<p class="post__text" >{{html.safe(blog.content.slice(0, 100))}}</p>
@@ -46,7 +46,7 @@
 										<div class="post-avatar">
 											<img loading="lazy" src="img/post-author1.png" alt="author">
 										</div>
-										<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">{{blog.user.full_name||'Property Xpo'}}</a></span>
+										<span class="post__author-name fn"> Posted by <a href="#" class="post__author-link">{{blog.user.fullName||'Property Xpo'}}</a></span>
 									</div>
 
 								</article>

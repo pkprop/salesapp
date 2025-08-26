@@ -1241,7 +1241,101 @@ h6, .h6 {
     display: none;
 }
 
+.copyhead-cardrow {
+    display: flex;
+    justify-content: space-between;
+}
+.copy-cardbox:nth-child(1) {
+    margin-top: 60px;
+}
+.copy-cardbox {
+    width: 48%;
+}
+.copy-cardbox div {
+    box-shadow: 0 2px 16px 4px rgba(40, 44, 63, 0.05);
+    background: rgb(255 255 255 / 40%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+}
+.cardtag {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.copy-cardbox div p {
+    /* font-weight: 600; */
+    color: rgb(0 0 0 / 60%);
+    margin: 12px 0px 0px;
+}
+.cardtag-1 {
+    background: #baeff2;
+    color: #2bb7d6;
+}
+.cardtag-2 {
+    background: #e4e2c1;
+    color: #9c976d;
+}
+.cardtag-3 {
+    background: #bafbb2;
+    color: #51a146;
+}
+.cardtag-4 {
+    background: #fed0ae;
+    color: #b47446;
+}
+.cardtag-5 {
+    background: #dcb6f0;
+    color: #904cb7;
+}
+.cardtag-6 {
+    background: #febdc2;
+    color: #de4484;
+}
 
+.wave-bg{
+    background-color: #fdb813;
+    background-image: url(../images/wave-bg.webp);
+    background-size: contain;
+}
+.bg-outline{
+   /* background-color: #fdb813; */
+    background-image: url(../images/Insurance-Hero-BG-Image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.video-audience-box {
+    margin-top: 30px;
+    padding: 22px;
+    border-radius: 20px;
+    background: rgb(34 30 55 / 60%);
+}
+.video-audi {
+    background: rgb(254 216 159 / 50%);
+}
+
+.video-audience-box .h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 12px 0px 10px;
+    font-family: "Lexend", sans-serif;
+}
+.video-audience-box p {
+    color: #fff;
+    margin: 0;
+}
+.video-audi .h4 {
+    color: #000;
+}
+.video-audi p {
+    color: rgb(0 0 0 / 70%);
+}
+.author img{
+  display: inline-block;
+}
 @media (max-width: 600px) {
     .webpdevelop-card {
         padding: 20px;
