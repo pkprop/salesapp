@@ -542,10 +542,9 @@ var CRUMINA = {};
         });
         wow.init();
     }
-}(jQuery);
 
-
-    gsap.registerPlugin(ScrollTrigger);
+    if ($('.webpdevelop-card').length) {
+     gsap.registerPlugin(ScrollTrigger);
     const cards = document.querySelectorAll(".webpdevelop-card");
     const header = document.querySelector(".webcard-header");
     const animation = gsap.timeline();
@@ -564,7 +563,7 @@ var CRUMINA = {};
                 ease: "none"
             }, 0);
         }
-    });
+    }); 
 
     // Check window width and add ScrollTrigger based on media query
     if (window.innerWidth >= 992) {
@@ -578,4 +577,9 @@ var CRUMINA = {};
             markers: false
         });
     } 
+}
+}(jQuery);
+
+
+   
 
