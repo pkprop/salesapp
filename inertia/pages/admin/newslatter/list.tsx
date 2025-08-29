@@ -57,6 +57,7 @@ const fd=(d:any)=>{
                                             <th>Name</th>
                                             <th>Email</th>
                                             <th>Date</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
 
@@ -72,6 +73,7 @@ const fd=(d:any)=>{
                                         </td>
                                           <td>{row?.email}</td>
                                           <td>{fd(row?.createdAt)}</td>
+                                          <td>#</td>
                                         </tr>
                                         ))} 
                                     </tbody>

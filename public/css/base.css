@@ -929,7 +929,7 @@ h6, .h6 {
     .list > li {
       font-size: 14px; } }
   .list > li a, .list > li li {
-    color: #acacac;
+    color: #5e5a5a;
     display: block;
     overflow: hidden; }
   .list > li i {
@@ -1079,6 +1079,45 @@ h6, .h6 {
     text-align: center;
     min-height: 296px;
 }
+
+.webaction-box-2 {
+    box-shadow: 0 2px 16px 4px rgba(40, 44, 63, 0.05);
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+    /* min-height: 296px; */
+} 
+
+.webaction-box-3 {
+    box-shadow: 0 2px 16px 4px rgba(40, 44, 63, 0.05);
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 0px;
+    text-align: center;
+    /* min-height: 296px; */
+} 
+
+article{
+    box-shadow: 0 2px 16px 4px rgba(40, 44, 63, 0.05);
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 0px;
+    text-align: center;
+} 
+
+.webaction-box-2 .info-box-image{
+  align-items: center;
+  display: flex;
+}
+.webaction-box-2 .info-box-image img{
+  max-width: 70px !important;
+}
+
 .webaction-box span {
     width: 80px;
     height: 80px;
@@ -1349,4 +1388,5 @@ h6, .h6 {
         min-height: auto;
     }
 }
+
 /*# sourceMappingURL=maps/base.css.map */

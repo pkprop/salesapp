@@ -75,7 +75,12 @@ $(function () {
            // console.log(results, 'results');
             if (results.success === true) {
                 $form.html('<h4>Thanks for reaching out to us. We’ll get back to you shortly!</h4>').fadeTo(300, 1);
-                $form[0].reset(); // Reset the form fields
+               $('#contact-form')[0].reset(); // Reset the form fields
+               $form.find('input[name="phone"]').val('');
+               $form.find('input[name="email"]').val('');
+               $form.find('input[name="phone"]').val('');
+               $form.find('input[name="url"]').val('');
+               $form.find('textarea[name="message"]').val('');
                 $('#error').html('').fadeTo(300, 0); // Clear any previous error
                 return;
             }else{

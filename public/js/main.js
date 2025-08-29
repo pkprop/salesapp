@@ -533,7 +533,7 @@ var CRUMINA = {};
         })), CRUMINA.animateSvg(), CRUMINA.counters(), CRUMINA.progresBars(), CRUMINA.pieCharts(), e(".subscribe").length && CRUMINA.SubscribeScrollAnnimation(), e(".seo-score").length && CRUMINA.SeoScoreScrollAnnimation(), e(".testimonial-slider").length && CRUMINA.TestimonialScrollAnnimation(), e(".our-vision").length && CRUMINA.OurVisionScrollAnnimation(), e(".background-mountains").length && CRUMINA.MountainsScrollAnnimation()
     })
 
-     if ($(".wow").length) {
+     if ($(".wow") && $(".wow").length) {
         var wow = new WOW({
             boxClass: "wow",
             animateClass: "animated",
@@ -543,41 +543,41 @@ var CRUMINA = {};
         wow.init();
     }
 
-    if ($('.webpdevelop-card').length) {
-     gsap.registerPlugin(ScrollTrigger);
-    const cards = document.querySelectorAll(".webpdevelop-card");
-    const header = document.querySelector(".webcard-header");
-    const animation = gsap.timeline();
+    if ($('.webpdevelop-card') && $('.webpdevelop-card').length) {
+        gsap.registerPlugin(ScrollTrigger);
+        const cards = document.querySelectorAll(".webpdevelop-card");
+        const header = document.querySelector(".webcard-header");
+        const animation = gsap.timeline();
 
-    cards.forEach((card, index) => {
-        if (index > 0) {
-            // Increment y value of each card by 240px
-            gsap.set(card, {
-                y: index * 380
+        cards.forEach((card, index) => {
+            if (index > 0) {
+                // Increment y value of each card by 240px
+                gsap.set(card, {
+                    y: index * 380
+                });
+
+                // Animate each card back to 0 (for stacking)
+                animation.to(card, {
+                    y: 0,
+                    duration: index * 0.5,
+                    ease: "none"
+                }, 0);
+            }
+        }); 
+
+        // Check window width and add ScrollTrigger based on media query
+        if (window.innerWidth >= 992) {
+            ScrollTrigger.create({
+                trigger: ".webpage-develop",
+                start: "top top",
+                pin: true,
+                end: `+=${cards.length * 260 + header.offsetHeight}`,
+                scrub: true,
+                animation: animation,
+                markers: false
             });
-
-            // Animate each card back to 0 (for stacking)
-            animation.to(card, {
-                y: 0,
-                duration: index * 0.5,
-                ease: "none"
-            }, 0);
-        }
-    }); 
-
-    // Check window width and add ScrollTrigger based on media query
-    if (window.innerWidth >= 992) {
-        ScrollTrigger.create({
-            trigger: ".webpage-develop",
-            start: "top top",
-            pin: true,
-            end: `+=${cards.length * 260 + header.offsetHeight}`,
-            scrub: true,
-            animation: animation,
-            markers: false
-        });
-    } 
-}
+        } 
+    }
 }(jQuery);
 
 

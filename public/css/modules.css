@@ -125,7 +125,7 @@
       line-height: 1; }
     @media (max-width: 560px) {
       .header .logo {
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
         margin: 0 auto 20px; } }
   .header.header-absolute {
@@ -2099,10 +2099,11 @@
 .subscribe {
   padding: 72px 0;
   overflow: hidden;
-  position: relative; }
+  position: relative; 
+}
   @media (max-width: 640px) {
     .subscribe {
-      padding: 70px 0 170px; 
+      padding: 70px 0 100px; 
     } 
   }
   .subscribe .subscribe-title {
