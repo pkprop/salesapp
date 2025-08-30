@@ -298,6 +298,7 @@ var CRUMINA = {};
                 setWrapperSize: !0,
                 preloadImages: !0,
                 updateOnImagesReady: !0,
+                disableOnInteraction:0,
                 autoplay: m,
                 autoHeight: p,
                 loop: l,

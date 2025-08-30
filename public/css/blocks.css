@@ -1329,7 +1329,13 @@ body.author .blog-details-author {
   background-position: center center; }
   @media (max-width: 768px) {
     .stunning-header {
-      padding: 25px 0; } }
+      padding: 25px 0; 
+      margin-top: 60px;
+    }
+    .main-slider{
+      padding-bottom:70px !important;
+    }
+  }
   .stunning-header .stunning-header-content {
     max-width: 800px;
     margin: 0 auto;
@@ -1341,16 +1347,16 @@ body.author .blog-details-author {
       color: #fff; }
       @media (max-width: 800px) {
         .stunning-header .stunning-header-content .stunning-header-title {
-          font-size: 40px; } }
+          font-size: 40px !important; } }
       @media (max-width: 640px) {
         .stunning-header .stunning-header-content .stunning-header-title {
-          font-size: 36px; } }
+          font-size: 36px !important; } }
       @media (max-width: 480px) {
         .stunning-header .stunning-header-content .stunning-header-title {
-          font-size: 30px; } }
+          font-size: 30px !important; } }
       @media (max-width: 360px) {
         .stunning-header .stunning-header-content .stunning-header-title {
-          font-size: 24px; } }
+          font-size: 24px !important; } }
     .stunning-header .stunning-header-content .breadcrumbs {
       margin-top: 40px;
       padding: 0; }

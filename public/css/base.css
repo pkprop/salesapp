@@ -664,7 +664,12 @@ input {
   background-color: #ff9700; }
 
 .bg-green-color {
-  background-color: #3cb878; }
+  background-color: #3cb878; 
+  background-image: url(../images/dotted-background.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+}
 
 .bg-greendark-color {
   background-color: #8dc63f; }
@@ -1387,6 +1392,9 @@ article{
         margin-top: 60px;
         min-height: auto;
     }
+}
+.slider-thumb img{
+  margin: auto;;
 }
 
 /*# sourceMappingURL=maps/base.css.map */
